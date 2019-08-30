@@ -25,9 +25,7 @@
   
   <div class="box">
     <strong>PHP</strong>
-    <pre>
-      <code class="php"></code>
-    </pre>
+    <pre class="php"></pre>
   </div>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
@@ -35,9 +33,9 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script>
     // hljs.initHighlightingOnLoad();
-    document.addEventListener('DOMContentLoaded', (event) => {
-      $(".php").load( "php/get.php" );
-      document.querySelectorAll('pre code').forEach((block) => {
+    document.addEventListener("DOMContentLoaded", (event) => {
+      $(".php").load("php/simple-get.php");
+      document.querySelectorAll("pre").forEach((block) => {
         hljs.highlightBlock(block);
       });
     });
