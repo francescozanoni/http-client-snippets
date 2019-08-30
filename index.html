@@ -7,9 +7,41 @@
   <meta name="description" content="HTTP client code snippets, multiple languages">
   <meta name="author" content="Francesco Zanoni">
   <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css">
+  <style>
+    .box {
+      display: inline-block;
+      padding: 1em;
+      border: solid 1px;
+    }
+    pre {
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
+  
   <h1>HTTP client snippets</h1>
-  <!--<script src="js/scripts.js"></script>-->
+  
+  <div class="box">
+    <strong>PHP</strong>
+    <pre>
+      <code class="php"></code>
+    </pre>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+  <script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/shell.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+    // hljs.initHighlightingOnLoad();
+    document.addEventListener('DOMContentLoaded', (event) => {
+      $(".php").load( "php/get.php" );
+      document.querySelectorAll('pre code').forEach((block) => {
+        hljs.highlightBlock(block);
+      });
+    });
+  </script>
+  
 </body>
 </html>
