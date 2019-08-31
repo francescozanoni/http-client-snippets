@@ -1,0 +1,14 @@
+body {
+  font-family: sans-serif;
+}
+pre {
+  margin: 0;
+}
+
+.box {
+  display: inline-block;
+  padding: 0.5em;
+  margin: 0.3em;
+  border: solid 0.05em;
+}
+    

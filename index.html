@@ -6,18 +6,8 @@
   <title>HTTP client snippets</title>
   <meta name="description" content="HTTP client code snippets, multiple languages">
   <meta name="author" content="Francesco Zanoni">
-  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css">
-  <style>
-    .box {
-      display: inline-block;
-      padding: 1em;
-      border: solid 1px;
-    }
-    pre {
-      margin: 0;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   
@@ -25,18 +15,23 @@
   
   <div class="box">
     <strong>PHP</strong>
-    <pre class="php"></pre>
+    <pre><code class="php"></code></pre>
+  </div>
+  
+  <div class="box">
+    <strong>Bash</strong>
+    <pre><code class="bash"></code></pre>
   </div>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
-  <script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/shell.min.js"></script>
-  <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script>
-    // hljs.initHighlightingOnLoad();
-    document.addEventListener("DOMContentLoaded", (event) => {
-      $(".php").load("php/simple-get.php");
-      document.querySelectorAll("pre").forEach((block) => {
-        hljs.highlightBlock(block);
+    $(document).ready(function() {
+      $(".php").load("php/simple-get.php", function() {
+        hljs.highlightBlock(this);
+      });
+      $(".bash").load("bash/wget-get.sh", function() {
+        hljs.highlightBlock(this);
       });
     });
   </script>
