@@ -1,5 +1,6 @@
-wget http://www.example.com
+wget -qO- http://www.example.com
 
 # -------------------------------------------------------------------------------------------------
 # METHOD:  GET
-# SOURCES: https://www.gnu.org/software/wget/manual/wget.html
+# OUTPUT:  STDOUT
+# SOURCES: https://stackoverflow.com/questions/12120935/wget-output-document-and-headers-to-stdout
