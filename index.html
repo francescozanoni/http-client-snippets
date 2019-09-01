@@ -21,30 +21,16 @@
 		"URL: " + url + ":" + lineNumber);
 	return true;
 };
-    var metadata = [
-      {
-        file_path: "php/simple-get.php",
-        language: "php",
-        sources: [
-          "https://www.php.net/manual/en/function.file-get-contents.php"
-        ]
-      },
-      {
-        file_path: "bash/wget-get.sh",
-        language: "bash",
-        sources: [
-          "https://stackoverflow.com/questions/12120935/wget-output-document-and-headers-to-stdout"
-        ]
-      }
-    ];
     $(document).ready(function() {
-      for (var i = 0; i < metadata.length; i++) {
+      $.getJSON("metadata.json", function(metadata) {
+        for (var i = 0; i < metadata.length; i++) {
         var e = $('<div class="box"><strong>' + metadata[i].language + '</strong><pre class="' + metadata[i].language + '"></pre></div>');
         e.find("pre").load(metadata[i].file_path, function() {
           hljs.highlightBlock(this);
         });
         $("body").append(e);
       }
+      });
     });
   </script>
   

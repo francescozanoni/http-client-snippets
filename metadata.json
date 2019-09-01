@@ -1,0 +1,16 @@
+[
+      {
+        "file_path": "php/simple-get.php",
+        "language": "php",
+        "sources": [
+          "https://www.php.net/manual/en/function.file-get-contents.php"
+        ]
+      },
+      {
+        "file_path": "bash/wget-get.sh",
+        "language": "bash",
+        "sources": [
+          "https://stackoverflow.com/questions/12120935/wget-output-document-and-headers-to-stdout"
+        ]
+      }
+    ]
