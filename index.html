@@ -13,26 +13,38 @@
   
   <h1>HTTP client snippets</h1>
   
-  <div class="box">
-    <strong>PHP</strong>
-    <pre><code class="php"></code></pre>
-  </div>
-  
-  <div class="box">
-    <strong>Bash</strong>
-    <pre><code class="bash"></code></pre>
-  </div>
-  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script>
+    window.onerror = function(errorMessage, url, lineNumber) {
+	alert("ERROR: " + errorMessage + "\n" +
+		"URL: " + url + ":" + lineNumber);
+	return true;
+};
+    var metadata = [
+      {
+        file_path: "php/simple-get.php",
+        language: "php",
+        sources: [
+          "https://www.php.net/manual/en/function.file-get-contents.php"
+        ]
+      },
+      {
+        file_path: "bash/wget-get.sh",
+        language: "bash",
+        sources: [
+          "https://stackoverflow.com/questions/12120935/wget-output-document-and-headers-to-stdout"
+        ]
+      }
+    ];
     $(document).ready(function() {
-      $(".php").load("php/simple-get.php", function() {
-        hljs.highlightBlock(this);
-      });
-      $(".bash").load("bash/wget-get.sh", function() {
-        hljs.highlightBlock(this);
-      });
+      for (var i = 0; i < metadata.length; i++) {
+        var e = $('<div class="box"><strong>' + metadata[i].language + '</strong><pre class="' + metadata[i].language + '"></pre></div>');
+        e.find("pre").load(metadata[i].file_path, function() {
+          hljs.highlightBlock(this);
+        });
+        $("body").append(e);
+      }
     });
   </script>
   
