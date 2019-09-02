@@ -1,23 +1,51 @@
 [
-      {
-        "file_path": "php/simple-get.php",
-        "language": "php",
-        "sources": [
-          "https://www.php.net/manual/en/function.file-get-contents.php"
-        ]
-      },
-      {
-        "file_path": "php/curl-concurrent-get.php",
-        "language": "php",
-        "sources": [
-          "http://arguments.callee.info/2010/02/21/multiple-curl-requests-with-php"
-        ]
-      },
-      {
-        "file_path": "bash/wget-get.sh",
-        "language": "bash",
-        "sources": [
-          "https://stackoverflow.com/questions/12120935/wget-output-document-and-headers-to-stdout"
-        ]
-      }
+  {
+    "title": "Simple GET with file_get_contents()",
+    "file_path": "php/simple-get.php",
+    "language": "php",
+    "sources": [
+      "https://www.php.net/manual/en/function.file-get-contents.php"
     ]
+  },
+  {
+    "title": "Concurrent GET with multicurl",
+    "file_path": "php/curl-concurrent-get.php",
+    "language": "php",
+    "sources": [
+      "http://arguments.callee.info/2010/02/21/multiple-curl-requests-with-php"
+    ]
+  },
+  {
+    "title": "Checked concurrent GET with multicurl",
+    "file_path": "php/curl-concurrent-with-check-get.php",
+    "language": "php",
+    "sources": [
+      "http://arguments.callee.info/2010/02/21/multiple-curl-requests-with-php"
+    ]
+  },
+  {
+    "title": "Concurrent GET with Guzzle",
+    "file_path": "php/guzzle-concurrent-get.php",
+    "language": "php",
+    "sources": [
+      "http://docs.guzzlephp.org/en/stable/quickstart.html",
+      "https://www.flynsarmy.com/2018/07/downloading-multiple-files-simultaneously-with-guzzle"
+    ]
+  },
+  {
+    "title": "GET request to console with wget",
+    "file_path": "bash/wget-to-console-get.sh",
+    "language": "bash",
+    "sources": [
+      "https://stackoverflow.com/questions/12120935/wget-output-document-and-headers-to-stdout"
+    ]
+  },
+  {
+    "title": "GET request to variable with wget",
+    "file_path": "bash/wget-to-variable-get.sh",
+    "language": "bash",
+    "sources": [
+      "https://stackoverflow.com/questions/12120935/wget-output-document-and-headers-to-stdout"
+    ]
+  }
+]

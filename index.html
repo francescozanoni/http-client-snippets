@@ -17,14 +17,16 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script>
     window.onerror = function(errorMessage, url, lineNumber) {
-	alert("ERROR: " + errorMessage + "\n" +
-		"URL: " + url + ":" + lineNumber);
-	return true;
-};
+      alert("ERROR: " + errorMessage + "\n" + "URL: " + url + ":" + lineNumber);
+      return true;
+    };
     $(document).ready(function() {
       $.getJSON("metadata.json", function(metadata) {
         for (var i = 0; i < metadata.length; i++) {
-        var e = $('<div class="box"><strong>' + metadata[i].language + '</strong><pre class="' + metadata[i].language + '"></pre></div>');
+        var e = $('<div class="box">' +
+                  '<strong>' + metadata[i].language.toUpperCase() + ': ' + metadata[i].title + '</strong>' +
+                  '<pre class="' + metadata[i].language + '"></pre>' +
+                  '</div>');
         e.find("pre").load(metadata[i].file_path, function() {
           hljs.highlightBlock(this);
         });
