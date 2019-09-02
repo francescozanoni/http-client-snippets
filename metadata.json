@@ -7,6 +7,13 @@
         ]
       },
       {
+        "file_path": "php/curl-concurrent-get.php",
+        "language": "php",
+        "sources": [
+          "http://arguments.callee.info/2010/02/21/multiple-curl-requests-with-php"
+        ]
+      },
+      {
         "file_path": "bash/wget-get.sh",
         "language": "bash",
         "sources": [
