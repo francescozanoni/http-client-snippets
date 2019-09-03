@@ -5,6 +5,9 @@
     "language": "php",
     "sources": [
       "https://www.php.net/manual/en/function.file-get-contents.php"
+    ],
+    "tags": [
+      "get", "synchronous", "output-to-variable"
     ]
   },
   {
@@ -13,6 +16,9 @@
     "language": "php",
     "sources": [
       "http://arguments.callee.info/2010/02/21/multiple-curl-requests-with-php"
+    ],
+    "tags": [
+      "get", "curl", "concurrent", "output-to-variable"
     ]
   },
   {
@@ -21,15 +27,21 @@
     "language": "php",
     "sources": [
       "http://arguments.callee.info/2010/02/21/multiple-curl-requests-with-php"
+    ],
+    "tags": [
+      "get", "curl", "concurrent", "output-to-variable"
     ]
   },
   {
-    "title": "Concurrent GET with Guzzle",
+    "title": "Concurrent download with Guzzle",
     "file_path": "php/guzzle-concurrent-get.php",
     "language": "php",
     "sources": [
       "http://docs.guzzlephp.org/en/stable/quickstart.html",
       "https://www.flynsarmy.com/2018/07/downloading-multiple-files-simultaneously-with-guzzle"
+    ],
+    "tags": [
+      "get", "guzzle", "concurrent", "output-to-file"
     ]
   },
   {
@@ -38,6 +50,9 @@
     "language": "bash",
     "sources": [
       "https://stackoverflow.com/questions/12120935/wget-output-document-and-headers-to-stdout"
+    ],
+    "tags": [
+      "get", "synchronous", "wget", "output-to-console"
     ]
   },
   {
@@ -46,6 +61,25 @@
     "language": "bash",
     "sources": [
       "https://stackoverflow.com/questions/12120935/wget-output-document-and-headers-to-stdout"
+    ],
+    "tags": [
+      "get", "synchronous", "wget", "output-to-variable"
+    ]
+  },
+  {
+    "title": "GET request to console with curl",
+    "file_path": "bash/curl-to-console-get.sh",
+    "language": "bash",
+    "tags": [
+      "get", "synchronous", "curl", "output-to-console"
+    ]
+  },
+  {
+    "title": "GET request to variable with curl",
+    "file_path": "bash/curl-to-variable-get.sh",
+    "language": "bash",
+    "tags": [
+      "get", "synchronous", "curl", "output-to-variable"
     ]
   }
 ]
