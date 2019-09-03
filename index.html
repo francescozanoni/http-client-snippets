@@ -13,25 +13,66 @@
   
   <h1>HTTP client snippets (<a href="https://github.com/francescozanoni/http-client-snippets" target="_blank">source</a>)</h1>
   
+  <div id="languages"><strong>Languages: </strong></div>
+  <div id="tags"><strong>Tags: </strong></div>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  
   <script>
     window.onerror = function(errorMessage, url, lineNumber) {
       alert("ERROR: " + errorMessage + "\n" + "URL: " + url + ":" + lineNumber);
       return true;
     };
+    // https://stackoverflow.com/questions/1960473/get-all-unique-values-in-a-javascript-array-remove-duplicates
+    function onlyUnique(value, index, self) { 
+      return self.indexOf(value) === index;
+    }
     $(document).ready(function() {
       $.getJSON("metadata.json", function(metadata) {
+        var tags = [];
+        var languages = [];
         for (var i = 0; i < metadata.length; i++) {
-        var e = $('<div class="box">' +
-                  '<div class="header">' + metadata[i].language.toUpperCase() + ': ' + metadata[i].title + '</div>' +
-                  '<pre class="' + metadata[i].language + '"></pre>' +
-                  '</div>');
-        e.find("pre").load(metadata[i].file_path, function() {
-          hljs.highlightBlock(this);
+          var e = $('<div class="box" data-language="' + metadata[i].language + '" data-tags="' + metadata[i].tags.join(",") + '">' +
+                    '<div class="header">' +
+                    metadata[i].language.toUpperCase() + ': ' + metadata[i].title +
+                    '</div>' +
+                    '<pre class="' + metadata[i].language + '"></pre>' +
+                    '</div>');
+          e.find("pre").load(metadata[i].file_path, function() {
+            hljs.highlightBlock(this);
+          });
+          $("body").append(e);
+          tags = tags.concat(metadata[i].tags).filter(onlyUnique);
+          languages = languages.concat([metadata[i].language]).filter(onlyUnique);
+        }
+        $("#languages").append('<a>' + languages.join('</a>, <a>') + '</a>');
+        $("#tags").append('<a>' + tags.join('</a>, <a>') + '</a>');
+        // https://stackoverflow.com/questions/4871389/how-to-get-the-text-value-of-a-clicked-link
+        $("#languages a").click(function(e) {
+          $("#languages a").css("font-weight", "normal");
+          $("#tags a").css("font-weight", "normal");
+          $(e.target).css("font-weight", "bold");
+          var language = $(e.target).text();
+          $(".box").hide();
+          $(".box").each(function() {
+            if ($(this).data("language") === language) {
+              $(this).show();
+            }
+          });
         });
-        $("body").append(e);
-      }
+        $("#tags a").click(function(e) {
+          $("#languages a").css("font-weight", "normal");
+          $("#tags a").css("font-weight", "normal");
+          $(e.target).css("font-weight", "bold");
+          var tag = $(e.target).text();
+          $(".box").hide();
+          $(".box").each(function() {
+            if ($(this).data("tags").indexOf(tag) !== -1) {
+              $(this).show();
+            }
+          });
+        });
       });
     });
   </script>
