@@ -65,8 +65,8 @@
                 languages = languages.concat([metadata[i].language]).filter(onlyUnique);
             }
 
-            $("#languages").append('<a>' + languages.join('</a>, <a>') + '</a>');
-            $("#tags").append('<a>' + tags.join('</a>, <a>') + '</a>');
+            $("#languages").append('<a href="#">' + languages.join('</a>, <a href="#">') + '</a>');
+            $("#tags").append('<a href="#">' + tags.join('</a>, <a href="#">') + '</a>');
 
             // https://stackoverflow.com/questions/4871389/how-to-get-the-text-value-of-a-clicked-link
             $("#languages a").click(function (e) {

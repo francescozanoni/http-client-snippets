@@ -23,7 +23,7 @@ do {
 
 // All requests are done or failed, we can access results
 foreach ($urls as $url) {
-  $content = curl_multi_getcontent($curls[$url]);
+  $response = curl_multi_getcontent($curls[$url]);
   curl_multi_remove_handle($m, $curls[$url]);
   curl_close($curls[$url]);
 }

@@ -1,1 +1,1 @@
-CONTENT=$(wget -qO - http://www.example.com)
+RESPONSE=$(wget -qO - http://www.example.com)
