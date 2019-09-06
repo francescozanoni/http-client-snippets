@@ -7,7 +7,9 @@
       "https://www.php.net/manual/en/function.file-get-contents.php"
     ],
     "tags": [
-      "get", "synchronous", "output-to-variable"
+      "get",
+      "synchronous",
+      "output-to-variable"
     ]
   },
   {
@@ -18,7 +20,10 @@
       "http://arguments.callee.info/2010/02/21/multiple-curl-requests-with-php"
     ],
     "tags": [
-      "get", "curl", "concurrent", "output-to-variable"
+      "get",
+      "curl",
+      "concurrent",
+      "output-to-variable"
     ]
   },
   {
@@ -29,7 +34,10 @@
       "http://arguments.callee.info/2010/02/21/multiple-curl-requests-with-php"
     ],
     "tags": [
-      "get", "curl", "concurrent", "output-to-variable"
+      "get",
+      "curl",
+      "concurrent",
+      "output-to-variable"
     ]
   },
   {
@@ -41,7 +49,10 @@
       "https://www.flynsarmy.com/2018/07/downloading-multiple-files-simultaneously-with-guzzle"
     ],
     "tags": [
-      "get", "guzzle", "concurrent", "output-to-file"
+      "get",
+      "guzzle",
+      "concurrent",
+      "output-to-file"
     ]
   },
   {
@@ -52,7 +63,10 @@
       "https://stackoverflow.com/questions/12120935/wget-output-document-and-headers-to-stdout"
     ],
     "tags": [
-      "get", "synchronous", "wget", "output-to-console"
+      "get",
+      "synchronous",
+      "wget",
+      "output-to-console"
     ]
   },
   {
@@ -63,7 +77,10 @@
       "https://stackoverflow.com/questions/12120935/wget-output-document-and-headers-to-stdout"
     ],
     "tags": [
-      "get", "synchronous", "wget", "output-to-variable"
+      "get",
+      "synchronous",
+      "wget",
+      "output-to-variable"
     ]
   },
   {
@@ -71,7 +88,10 @@
     "file_path": "bash/curl-to-console-get.sh",
     "language": "bash",
     "tags": [
-      "get", "synchronous", "curl", "output-to-console"
+      "get",
+      "synchronous",
+      "curl",
+      "output-to-console"
     ]
   },
   {
@@ -79,7 +99,40 @@
     "file_path": "bash/curl-to-variable-get.sh",
     "language": "bash",
     "tags": [
-      "get", "synchronous", "curl", "output-to-variable"
+      "get",
+      "synchronous",
+      "curl",
+      "output-to-variable"
+    ]
+  },
+  {
+    "title": "GET request with Basic Authentication with curl",
+    "file_path": "bash/curl-basic-authentication.sh",
+    "language": "bash",
+    "sources": [
+      "https://ec.haxx.se/http-auth.html"
+    ],
+    "tags": [
+      "get",
+      "synchronous",
+      "curl",
+      "output-to-console",
+      "basic-authentication"
+    ]
+  },
+  {
+    "title": "GET request with Basic Authentication with wget",
+    "file_path": "bash/wget-basic-authentication.sh",
+    "language": "bash",
+    "sources": [
+      "https://cxlabs.sap.com/2012/07/27/using-wget-with-basic-authentication"
+    ],
+    "tags": [
+      "get",
+      "synchronous",
+      "wget",
+      "output-to-console",
+      "basic-authentication"
     ]
   }
 ]
