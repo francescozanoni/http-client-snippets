@@ -207,5 +207,19 @@
       "output-to-variable",
       "basic-authentication"
     ]
+  },
+  {
+    "title": "Simple GET request with jQuery",
+    "file_path": "javascript/jquery-get.js",
+    "language": "javascript",
+    "sources": [
+      "https://api.jquery.com/jQuery.get/#jqxhr-object"
+    ],
+    "tags": [
+      "get",
+      "asynchronous",
+      "jquery",
+      "output-to-variable"
+    ]
   }
 ]
