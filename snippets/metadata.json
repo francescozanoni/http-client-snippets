@@ -1,7 +1,7 @@
 [
   {
     "title": "Simple GET with file_get_contents()",
-    "file_path": "php/simple-get.php",
+    "file_path": "snippets/php/simple-get.php",
     "language": "php",
     "sources": [
       "https://www.php.net/manual/en/function.file-get-contents.php"
@@ -14,7 +14,7 @@
   },
   {
     "title": "Concurrent GET with multicurl",
-    "file_path": "php/curl-concurrent-get.php",
+    "file_path": "snippets/php/curl-concurrent-get.php",
     "language": "php",
     "sources": [
       "http://arguments.callee.info/2010/02/21/multiple-curl-requests-with-php"
@@ -28,7 +28,7 @@
   },
   {
     "title": "Checked concurrent GET with multicurl",
-    "file_path": "php/curl-concurrent-with-check-get.php",
+    "file_path": "snippets/php/curl-concurrent-with-check-get.php",
     "language": "php",
     "sources": [
       "http://arguments.callee.info/2010/02/21/multiple-curl-requests-with-php"
@@ -42,7 +42,7 @@
   },
   {
     "title": "Concurrent download with Guzzle",
-    "file_path": "php/guzzle-concurrent-get.php",
+    "file_path": "snippets/php/guzzle-concurrent-get.php",
     "language": "php",
     "sources": [
       "http://docs.guzzlephp.org/en/stable/quickstart.html",
@@ -57,7 +57,7 @@
   },
   {
     "title": "GET request to console with wget",
-    "file_path": "bash/wget-to-console-get.sh",
+    "file_path": "snippets/bash/wget-to-console-get.sh",
     "language": "bash",
     "sources": [
       "https://stackoverflow.com/questions/12120935/wget-output-document-and-headers-to-stdout"
@@ -71,7 +71,7 @@
   },
   {
     "title": "GET request to variable with wget",
-    "file_path": "bash/wget-to-variable-get.sh",
+    "file_path": "snippets/bash/wget-to-variable-get.sh",
     "language": "bash",
     "sources": [
       "https://stackoverflow.com/questions/12120935/wget-output-document-and-headers-to-stdout"
@@ -85,7 +85,7 @@
   },
   {
     "title": "GET request to console with curl",
-    "file_path": "bash/curl-to-console-get.sh",
+    "file_path": "snippets/bash/curl-to-console-get.sh",
     "language": "bash",
     "tags": [
       "get",
@@ -96,7 +96,7 @@
   },
   {
     "title": "GET request to variable with curl",
-    "file_path": "bash/curl-to-variable-get.sh",
+    "file_path": "snippets/bash/curl-to-variable-get.sh",
     "language": "bash",
     "tags": [
       "get",
@@ -107,7 +107,7 @@
   },
   {
     "title": "Basic Authentication with curl",
-    "file_path": "bash/curl-basic-authentication.sh",
+    "file_path": "snippets/bash/curl-basic-authentication.sh",
     "language": "bash",
     "sources": [
       "https://ec.haxx.se/http-auth.html"
@@ -122,7 +122,7 @@
   },
   {
     "title": "Basic Authentication with wget",
-    "file_path": "bash/wget-basic-authentication.sh",
+    "file_path": "snippets/bash/wget-basic-authentication.sh",
     "language": "bash",
     "sources": [
       "https://cxlabs.sap.com/2012/07/27/using-wget-with-basic-authentication"
@@ -137,7 +137,7 @@
   },
   {
     "title": "POST request with JSON body with curl",
-    "file_path": "bash/curl-json-post.sh",
+    "file_path": "snippets/bash/curl-json-post.sh",
     "language": "bash",
     "sources": [
       "https://gist.github.com/subfuzion/08c5d85437d5d4f00e58"
@@ -152,7 +152,7 @@
   },
   {
     "title": "POST request with curl",
-    "file_path": "bash/curl-post.sh",
+    "file_path": "snippets/bash/curl-post.sh",
     "language": "bash",
     "sources": [
       "https://gist.github.com/subfuzion/08c5d85437d5d4f00e58"
@@ -166,7 +166,7 @@
   },
   {
     "title": "POST request with curl",
-    "file_path": "php/curl-post.php",
+    "file_path": "snippets/php/curl-post.php",
     "language": "php",
     "sources": [
       "https://stackoverflow.com/questions/2138527/php-curl-http-post-sample-code#2138534"
@@ -180,7 +180,7 @@
   },
   {
     "title": "POST request with JSON body with curl",
-    "file_path": "php/curl-json-post.php",
+    "file_path": "snippets/php/curl-json-post.php",
     "language": "php",
     "sources": [
       "https://tecadmin.net/post-json-data-php-curl/"
@@ -195,7 +195,7 @@
   },
   {
     "title": "Basic Authentication with curl",
-    "file_path": "php/curl-basic-authentication.php",
+    "file_path": "snippets/php/curl-basic-authentication.php",
     "language": "php",
     "sources": [
       "https://stackoverflow.com/questions/2140419/how-do-i-make-a-request-using-http-basic-authentication-with-php-curl#2140445"
@@ -210,16 +210,48 @@
   },
   {
     "title": "Simple GET request with jQuery",
-    "file_path": "javascript/jquery-get.js",
+    "file_path": "snippets/javascript/jquery-get.js",
     "language": "javascript",
     "sources": [
-      "https://api.jquery.com/jQuery.get/#jqxhr-object"
+      "https://api.jquery.com/jQuery.get/#jqxhr-object",
+      "https://api.jquery.com/jQuery.ajax"
     ],
     "tags": [
       "get",
       "asynchronous",
       "jquery",
       "output-to-variable"
+    ]
+  },
+  {
+    "title": "GET request with query string with jQuery",
+    "file_path": "snippets/javascript/jquery-query-string-get.js",
+    "language": "javascript",
+    "sources": [
+      "https://api.jquery.com/jQuery.get"
+    ],
+    "tags": [
+      "get",
+      "asynchronous",
+      "jquery",
+      "output-to-variable",
+      "query-string"
+    ]
+  },
+  {
+    "title": "GET request with basic authentication with jQuery",
+    "file_path": "snippets/javascript/jquery-basic-authentication.js",
+    "language": "javascript",
+    "sources": [
+      "https://stackoverflow.com/questions/5507234/use-basic-authentication-with-jquery-and-ajax#5507289",
+      "https://api.jquery.com/jQuery.ajax"
+    ],
+    "tags": [
+      "get",
+      "asynchronous",
+      "jquery",
+      "output-to-variable",
+      "basic-authentication"
     ]
   }
 ]

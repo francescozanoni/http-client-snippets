@@ -1,2 +1,7 @@
-# http-client-snippets
-Code snippets of HTTP clients, multiple languages
+# HTTP client code snippets, multiple languages
+
+Languages:
+ - PHP
+ - Bash
+ - JavaScript
+

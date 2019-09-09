@@ -35,6 +35,24 @@
         return self.indexOf(value) === index;
     }
 
+    function formatLanguageName(language) {
+
+        var output = "";
+
+        switch (language) {
+            case "bash":
+                output = "Bash";
+                break;
+            case "javascript":
+                output = "JavaScript";
+                break;
+            default:
+                output = language.toUpperCase();
+        }
+
+        return output;
+    }
+
     var BoxBuilder = {
         "template": '<div class="box">' +
             '<div class="header"></div>' +
@@ -45,7 +63,7 @@
             var box = $(this.template);
             box.data("language", metadata.language);
             box.data("tags", metadata.tags.join(","));
-            box.find(".header").text(metadata.language.toUpperCase() + ': ' + metadata.title);
+            box.find(".header").text(formatLanguageName(metadata.language) + ': ' + metadata.title);
             box.find("pre").attr("class", metadata.language);
             if (metadata.sources) {
                 box.find(".sources").text("Sources:");
@@ -62,7 +80,7 @@
     };
 
     $(document).ready(function () {
-        $.getJSON("metadata.json", function (metadata) {
+        $.getJSON("snippets/metadata.json", function (metadata) {
 
             var tags = [];
             var languages = [];
