@@ -19,8 +19,16 @@ pre {
     margin-bottom: 0.5em;
 }
 
+.box .tags {
+    margin-top: 0.5em;
+    font-style: italic;
+    font-size: 80%;
+}
+
 .box .sources {
     margin-top: 0.5em;
+    font-style: italic;
+    font-size: 80%;
 }
 
 #languages, #tags {

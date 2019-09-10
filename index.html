@@ -56,7 +56,8 @@
     var BoxBuilder = {
         "template": '<div class="box">' +
             '<div class="header"></div>' +
-            '<pre></pre>' +
+            '<pre class="snippet"></pre>' +
+            '<div class="tags"></div>' +
             '<div class="sources"></div>' +
             '</div>',
         "build": function (metadata) {
@@ -64,18 +65,21 @@
             box.data("language", metadata.language);
             box.data("tags", metadata.tags.join(","));
             box.find(".header").text(formatLanguageName(metadata.language) + ': ' + metadata.title);
-            box.find("pre").attr("class", metadata.language);
+            box.find(".snippet").attr("class", box.find(".snippet").attr("class") + " " + metadata.language);
+            if (metadata.tags) {
+                box.find(".tags").text("Tags: ");
+                box.find(".tags").append(metadata.tags.join(", "));
+            }
             if (metadata.sources) {
                 box.find(".sources").text("Sources:");
-                for (var i = 0; i < metadata.sources.length; i++) {
-                    var sourceLink = ' <a href="' + metadata.sources[i] + '" target="_blank">[' + (i + 1) + ']</a>';
-                    box.find(".sources").append(sourceLink);
-                }
+                $.each(metadata.sources, function (index, source) {
+                    box.find(".sources").append(' <a href="' + source + '" target="_blank">[' + (index + 1) + ']</a>');
+                });
             }
             return box;
         },
         "loadSnippet": function (box, metadata, callback) {
-            box.find("pre").load(metadata.file_path, callback);
+            box.find(".snippet").load(metadata.file_path, callback);
         }
     };
 
