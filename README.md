@@ -1,7 +1,13 @@
 # HTTP client code snippets, multiple languages
 
 Languages:
- - PHP
+ - PHP:
+   - curl
+   - Guzzle
  - Bash
+   - wget
+   - curl
  - JavaScript
+   - jQuery
+   - Node JS
 

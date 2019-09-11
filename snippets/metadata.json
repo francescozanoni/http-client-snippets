@@ -4,7 +4,8 @@
     "file_path": "snippets/php/simple-get.php",
     "language": "php",
     "sources": [
-      "https://www.php.net/manual/en/function.file-get-contents.php"
+      "https://www.php.net/manual/en/function.file-get-contents.php",
+      "https://www.php.net/manual/en/context.http.php"
     ],
     "tags": [
       "get",
@@ -239,7 +240,7 @@
     ]
   },
   {
-    "title": "GET request with basic authentication with jQuery",
+    "title": "Basic Authentication with jQuery",
     "file_path": "snippets/javascript/jquery-basic-authentication.js",
     "language": "javascript",
     "sources": [
@@ -252,6 +253,20 @@
       "jquery",
       "output-to-variable",
       "basic-authentication"
+    ]
+  },
+  {
+    "title": "GET request with Node",
+    "file_path": "snippets/javascript/node-get.js",
+    "language": "javascript",
+    "sources": [
+      "https://www.twilio.com/blog/2017/08/http-requests-in-node-js.html"
+    ],
+    "tags": [
+      "get",
+      "asynchronous",
+      "node",
+      "output-to-variable"
     ]
   }
 ]

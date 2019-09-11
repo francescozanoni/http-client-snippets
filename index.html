@@ -95,8 +95,8 @@
                     hljs.highlightBlock(this);
                 });
                 $("body").append(box);
-                tags = tags.concat(metadata[i].tags).filter(onlyUnique);
-                languages = languages.concat([metadata[i].language]).filter(onlyUnique);
+                languages = languages.concat([metadata[i].language]).filter(onlyUnique).sort();
+                tags = tags.concat(metadata[i].tags).filter(onlyUnique).sort();
             }
 
             $("#languages").append('<a href="#">' + languages.join('</a>, <a href="#">') + '</a>');
