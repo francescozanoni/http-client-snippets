@@ -10,11 +10,11 @@ $urls = [
 $client = new Client();
 
 $requests = function ($client) use ($urls) {
-  foreach($urls as $url) {
-    yield function() use ($client, $url) {
+  foreach($urls as $i => $url) {
+    yield function() use ($client, $i, $url) {
       return $client->getAsync(
         $url,
-        ["sink" => parse_url($url)["host"] . ".html"]
+        ["sink" => $i . ".html"]
       );
     };
   }
