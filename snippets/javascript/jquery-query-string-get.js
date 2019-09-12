@@ -5,6 +5,6 @@ $.get(
   .done(function (data, textStatus, jqXHR) {
 
   })
-  .fail(function (jqXHR, textStatus, errorThrown) {
+  .fail(function (jqXHR, textStatus, error) {
 
   });
