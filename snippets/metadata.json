@@ -268,5 +268,46 @@
       "node",
       "output-to-variable"
     ]
+  },
+  {
+    "title": "Simple POST with file_get_contents()",
+    "file_path": "snippets/php/simple-post.php",
+    "language": "php",
+    "sources": [
+      "https://www.php.net/manual/en/context.http.php"
+    ],
+    "tags": [
+      "post",
+      "synchronous",
+      "output-to-variable"
+    ]
+  },
+  {
+    "title": "Simple Basic Authentication",
+    "file_path": "snippets/php/simple-basic-authentication.php",
+    "language": "php",
+    "sources": [
+      "https://stackoverflow.com/questions/7732634/making-a-http-get-request-with-http-basic-authentication#21565794"
+    ],
+    "tags": [
+      "get",
+      "synchronous",
+      "output-to-variable",
+      "basic-authentication"
+    ]
+  },
+  {
+    "title": "GET request with Guzzle",
+    "file_path": "snippets/php/guzzle-get.php",
+    "language": "php",
+    "sources": [
+      "http://docs.guzzlephp.org/en/stable/quickstart.html#making-a-request"
+    ],
+    "tags": [
+      "get",
+      "synchronous",
+      "output-to-variable",
+      "guzzle"
+    ]
   }
 ]
