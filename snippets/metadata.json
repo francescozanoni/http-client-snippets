@@ -315,7 +315,7 @@
     "file_path": "snippets/php/guzzle-post.php",
     "language": "php",
     "sources": [
-      "http://docs.guzzlephp.org/en/stable/quickstart.html"
+      "http://docs.guzzlephp.org/en/stable/quickstart.html#post-form-requests"
     ],
     "tags": [
       "post",
