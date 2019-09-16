@@ -5,10 +5,8 @@ $response = $client->post(
   "http://www.example.com",
   [
     "form_params" => [
-      [
-        "key1" => "value1",
-        "key2" => "value2"
-      ]
+      "key1" => "value1",
+      "key2" => "value2"
     ]
   ]
 );
