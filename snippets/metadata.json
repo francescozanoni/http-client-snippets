@@ -309,5 +309,19 @@
       "output-to-variable",
       "guzzle"
     ]
+  },
+  {
+    "title": "POST request with Guzzle",
+    "file_path": "snippets/php/guzzle-post.php",
+    "language": "php",
+    "sources": [
+      "http://docs.guzzlephp.org/en/stable/quickstart.html"
+    ],
+    "tags": [
+      "post",
+      "synchronous",
+      "output-to-variable",
+      "guzzle"
+    ]
   }
 ]
