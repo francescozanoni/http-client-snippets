@@ -311,6 +311,20 @@
     ]
   },
   {
+    "title": "GET request with Guzzle",
+    "file_path": "snippets/php/guzzle-get-2.php",
+    "language": "php",
+    "sources": [
+      "http://docs.guzzlephp.org/en/stable/quickstart.html#creating-a-client"
+    ],
+    "tags": [
+      "get",
+      "synchronous",
+      "output-to-variable",
+      "guzzle"
+    ]
+  },
+  {
     "title": "POST request with Guzzle",
     "file_path": "snippets/php/guzzle-post.php",
     "language": "php",
@@ -333,6 +347,21 @@
       "asynchronous",
       "output-to-variable",
       "dot-net-core"
+    ]
+  },
+  {
+    "title": "PSR-7 GET request with Guzzle",
+    "file_path": "snippets/php/guzzle-psr7-get.php",
+    "language": "php",
+    "sources": [
+      "http://docs.guzzlephp.org/en/stable/quickstart.html#sending-requests"
+    ],
+    "tags": [
+      "get",
+      "synchronous",
+      "output-to-variable",
+      "guzzle",
+      "psr-7"
     ]
   }
 ]
