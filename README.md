@@ -10,4 +10,6 @@ Languages:
  - JavaScript
    - jQuery
    - Node JS
+ - C#
+   - .NET Core
 

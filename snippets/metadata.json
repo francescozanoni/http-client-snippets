@@ -323,5 +323,16 @@
       "output-to-variable",
       "guzzle"
     ]
+  },
+  {
+    "title": "Asynchronous GET request with .NET Core",
+    "file_path": "snippets/csharp/simple-async.cs",
+    "language": "csharp",
+    "tags": [
+      "get",
+      "asynchronous",
+      "output-to-variable",
+      "dot-net-core"
+    ]
   }
 ]
