@@ -339,6 +339,21 @@
     ]
   },
   {
+    "title": "Custom headers with Guzzle",
+    "file_path": "snippets/php/guzzle-custom-headers-get.php",
+    "language": "php",
+    "sources": [
+      "http://docs.guzzlephp.org/en/stable/request-options.html#headers"
+    ],
+    "tags": [
+      "get",
+      "synchronous",
+      "output-to-variable",
+      "custom-headers",
+      "guzzle"
+    ]
+  },
+  {
     "title": "Asynchronous GET request with .NET Core",
     "file_path": "snippets/csharp/simple-async.cs",
     "language": "csharp",
@@ -362,6 +377,31 @@
       "output-to-variable",
       "guzzle",
       "psr-7"
+    ]
+  },
+  {
+    "title": "Basic Authentication with Guzzle",
+    "file_path": "snippets/php/guzzle-basic-authentication.php",
+    "language": "php",
+    "sources": [
+      "http://docs.guzzlephp.org/en/stable/request-options.html#auth"
+    ],
+    "tags": [
+      "get",
+      "synchronous",
+      "guzzle",
+      "output-to-variable",
+      "basic-authentication"
+    ]
+  },
+  {
+    "title": "Simple GET request",
+    "file_path": "snippets/java/simple-get.java",
+    "language": "java",
+    "tags": [
+      "get",
+      "synchronous",
+      "output-to-variable"
     ]
   }
 ]

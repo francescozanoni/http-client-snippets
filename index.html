@@ -24,37 +24,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
+<script src="functions.js"></script>
+
 <script>
-    window.onerror = function (errorMessage, url, lineNumber) {
-        alert("ERROR: " + errorMessage + "\n" + "URL: " + url + ":" + lineNumber);
-        return true;
-    };
-
-    // https://stackoverflow.com/questions/1960473/get-all-unique-values-in-a-javascript-array-remove-duplicates
-    function onlyUnique(value, index, self) {
-        return self.indexOf(value) === index;
-    }
-
-    function formatLanguageName(language) {
-
-        var output = "";
-
-        switch (language) {
-            case "bash":
-                output = "Bash";
-                break;
-            case "javascript":
-                output = "JavaScript";
-                break;
-            case "csharp":
-                output = "C#";
-                break;
-            default:
-                output = language.toUpperCase();
-        }
-
-        return output;
-    }
+    window.onerror = errorHandler;
 
     var BoxBuilder = {
         "template": '<div class="box">' +
