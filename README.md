@@ -1,9 +1,10 @@
 # HTTP client code snippets, multiple languages
 
-Languages:
+Languages/libraries:
  - PHP:
    - curl
    - Guzzle
+   - Swoole
  - Bash
    - wget
    - curl
