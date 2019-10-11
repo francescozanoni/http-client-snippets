@@ -6,5 +6,5 @@ $client->setHeaders([
   ]
 ]);
 $client->get("/", function ($client) {
-    $content = $client->body;
+  $content = $client->body;
 });
