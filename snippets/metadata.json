@@ -403,5 +403,20 @@
       "synchronous",
       "output-to-variable"
     ]
+  },
+  
+  {
+    "title": "Asynchronous GET with Swoole",
+    "file_path": "snippets/php/swoole-async-get.php",
+    "language": "php",
+    "sources": [
+      "https://www.swoole.co.uk/#get-started"
+    ],
+    "tags": [
+      "get",
+      "asynchronous",
+      "output-to-variable",
+      "swoole"
+    ]
   }
 ]
