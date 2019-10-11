@@ -420,7 +420,7 @@
   },
   {
     "title": "Custom headers with Swoole",
-    "file_path": "snippets/php/swoole-async-get.php",
+    "file_path": "snippets/php/swoole-async-custom-headers-get.php",
     "language": "php",
     "sources": [
       "https://www.swoole.co.uk/#get-started"
