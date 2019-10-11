@@ -5,8 +5,8 @@ $payload = http_build_query([
 
 $options = [
   "http" => [
-    "method"  => "POST",
-    "header"  => "Content-type: application/x-www-form-urlencoded",
+    "method" => "POST",
+    "header" => "Content-type: application/x-www-form-urlencoded",
     "content" => $payload,
     "ignore_errors" => true,
   ]

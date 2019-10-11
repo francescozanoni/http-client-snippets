@@ -1,6 +1,8 @@
+$encodedCredentials = base64_encode("my_username:my_password");
+
 $options = [
   "http" => [
-    "header"  => "Authorization: Basic " . base64_encode("my_username:my_password"),
+    "header"  => "Authorization: Basic " . $encodedCredentials,
     "ignore_errors" => true,
   ]
 ];

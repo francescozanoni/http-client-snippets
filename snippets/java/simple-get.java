@@ -11,15 +11,15 @@ public class Program {
     try {
 
       URL url = new URL("http://www.example.com");
-      HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+      HttpURLConnection c = (HttpURLConnection) url.openConnection();
 
       // Request is performed and response retrieved
       InputStream inputStream = null;
       BufferedReader br = null;
       if (connection.getResponseCode() == 200) {
-        inputStream = connection.getInputStream();
+        inputStream = c.getInputStream();
       } else {
-        inputStream = connection.getErrorStream();
+        inputStream = c.getErrorStream();
       }
       br = new BufferedReader(new InputStreamReader(inputStream));
 
@@ -30,7 +30,7 @@ public class Program {
         content += temp;
       }
 
-      connection.disconnect();
+      c.disconnect();
 
     } catch (Exception e) {
 
