@@ -432,5 +432,19 @@
       "custom-headers",
       "swoole"
     ]
+  },
+  {
+    "title": "GET request to console with curl",
+    "file_path": "snippets/c/curl-to-console-get.c",
+    "language": "c",
+    "sources": [
+      "https://curl.haxx.se/libcurl/c/simple.html"
+    ],
+    "tags": [
+      "get",
+      "synchronous",
+      "curl",
+      "output-to-console"
+    ]
   }
 ]

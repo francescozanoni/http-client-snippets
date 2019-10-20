@@ -68,6 +68,7 @@
             for (var i = 0; i < metadata.length; i++) {
                 var box = BoxBuilder.build(metadata[i]);
                 BoxBuilder.loadSnippet(box, metadata[i], function () {
+                    // $(this).text(escapeHtml($(this).text()));
                     hljs.highlightBlock(this);
                 });
                 $("body").append(box);
