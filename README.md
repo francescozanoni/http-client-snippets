@@ -14,3 +14,5 @@ Languages/libraries:
  - C#
    - .NET Core
  - Java
+ - C
+   - curl
