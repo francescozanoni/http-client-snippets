@@ -11,7 +11,7 @@ curl_setopt($c, CURLOPT_POST, true);
 curl_setopt($c, CURLOPT_POSTFIELDS, $payload);
 curl_setopt($c, CURLOPT_HTTPHEADER, [
   "Content-Type: application/json",
-  "Content-Length: " . strlen($payload))
-];
+  "Content-Length: " . strlen($payload)
+]);
 $response = curl_exec($c);
 curl_close($c);

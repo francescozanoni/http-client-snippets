@@ -35,7 +35,7 @@ while (count($urls) > 0) {
     curl_close($curls[$url]);
     // If request is successful,
     // its URL is removed from URL list
-    if (strlen($content) > 0) {
+    if (strlen($response) > 0) {
       unset($urls[array_search($url, $urls)]);
     }
   }
