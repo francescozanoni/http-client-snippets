@@ -6,6 +6,14 @@ pre {
     margin: 0;
 }
 
+h1 a {
+    float: right;
+}
+
+h1 object {
+    width: 1.5em;
+}
+
 .box {
     float: left;
     padding: 0.5em;
