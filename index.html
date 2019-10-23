@@ -16,6 +16,11 @@
 <h1>
     HTTP client snippets
     <a href="https://github.com/francescozanoni/http-client-snippets" target="_blank">
+        <!--
+        As reported at URL https://forums.lastpass.com/viewtopic.php?f=12&t=323095&p=1080525&hilit=Cannot+read+property+%27querySelectorAll%27+of+null#p1080525 ,
+        when SVG is used LastPass browser plugin causes the following error:
+        Uncaught (in promise) TypeError: Cannot read property 'querySelectorAll' of null - onloadwff.js:71
+        -->
         <object data="https://simpleicons.org/icons/github.svg" type="image/svg+xml" title="GitHub repository"></object>
     </a>
 </h1>
@@ -29,7 +34,9 @@
 <script src="assets/functions.js"></script>
 
 <script>
-    window.onerror = errorHandler;
+    if (window.location.hostname === "localhost") {
+        window.onerror = errorHandler;
+    }
 
     var BoxBuilder = {
         "template": '<div class="box">' +
