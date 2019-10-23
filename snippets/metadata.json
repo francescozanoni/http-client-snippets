@@ -446,5 +446,19 @@
       "curl",
       "output-to-console"
     ]
+  },
+  {
+    "title": "GET request with curl",
+    "file_path": "snippets/php/curl-get.php",
+    "language": "php",
+    "sources": [
+      "https://www.php.net/manual/en/curl.examples.php"
+    ],
+    "tags": [
+      "get",
+      "synchronous",
+      "curl",
+      "output-to-variable"
+    ]
   }
 ]
