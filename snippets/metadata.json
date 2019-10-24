@@ -85,14 +85,45 @@
     ]
   },
   {
+    "title": "Download file with wget",
+    "file_path": "snippets/bash/wget-to-file-get.sh",
+    "language": "bash",
+    "sources": [
+      "https://www.gnu.org/software/wget/manual/wget.html#index-output-file"
+    ],
+    "tags": [
+      "get",
+      "synchronous",
+      "wget",
+      "output-to-file"
+    ]
+  },
+  {
     "title": "GET request to console with curl",
     "file_path": "snippets/bash/curl-to-console-get.sh",
     "language": "bash",
+    "sources": [
+      "https://curl.haxx.se/docs/manpage.html"
+    ],
     "tags": [
       "get",
       "synchronous",
       "curl",
       "output-to-console"
+    ]
+  },
+  {
+    "title": "Download file with curl",
+    "file_path": "snippets/bash/curl-to-file-get.sh",
+    "language": "bash",
+    "sources": [
+      "https://curl.haxx.se/docs/manpage.html#-o"
+    ],
+    "tags": [
+      "get",
+      "synchronous",
+      "curl",
+      "output-to-file"
     ]
   },
   {
