@@ -396,6 +396,16 @@
     ]
   },
   {
+    "title": "GET request with .NET",
+    "file_path": "snippets/csharp/simple-get.cs",
+    "language": "csharp",
+    "tags": [
+      "get",
+      "synchronous",
+      "output-to-variable"
+    ]
+  },
+  {
     "title": "PSR-7 GET request with Guzzle",
     "file_path": "snippets/php/guzzle-psr7-get.php",
     "language": "php",
