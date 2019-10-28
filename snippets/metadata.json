@@ -396,13 +396,24 @@
     ]
   },
   {
-    "title": "GET request with .NET",
+    "title": "Simple GET request",
     "file_path": "snippets/csharp/simple-get.cs",
     "language": "csharp",
     "tags": [
       "get",
       "synchronous",
       "output-to-variable"
+    ]
+  },
+  {
+    "title": "Basic Authentication",
+    "file_path": "snippets/csharp/simple-basic-authentication.cs",
+    "language": "csharp",
+    "tags": [
+      "get",
+      "synchronous",
+      "output-to-variable",
+      "basic-authentication"
     ]
   },
   {
