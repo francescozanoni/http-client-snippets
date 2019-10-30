@@ -527,5 +527,21 @@
       "output-to-variable",
       "custom-headers"
     ]
-  }
+  },
+  {
+    "title": "Cookies with wget",
+    "file_path": "snippets/bash/wget-cookies.sh",
+    "language": "bash",
+    "sources": [
+      "https://www.apharmony.com/software-sagacity/2014/10/using-wget-with-cookies"
+    ],
+    "tags": [
+      "get",
+      "synchronous",
+      "wget",
+      "output-to-console",
+      "basic-authentication",
+      "cookies"
+    ]
+  },
 ]
