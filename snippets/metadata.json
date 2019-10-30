@@ -153,6 +153,23 @@
     ]
   },
   {
+    "title": "Cookies with curl",
+    "file_path": "snippets/bash/curl-cookies.sh",
+    "language": "bash",
+    "sources": [
+      "https://ec.haxx.se/http-cookies.html",
+      "https://curl.haxx.se/docs/manpage.html"
+    ],
+    "tags": [
+      "get",
+      "synchronous",
+      "curl",
+      "output-to-console",
+      "basic-authentication",
+      "cookies"
+    ]
+  },
+  {
     "title": "Basic Authentication with wget",
     "file_path": "snippets/bash/wget-basic-authentication.sh",
     "language": "bash",
