@@ -512,5 +512,20 @@
       "curl",
       "output-to-variable"
     ]
+  },
+  {
+    "title": "Custom headers with curl",
+    "file_path": "snippets/php/curl-custom-headers-get.php",
+    "language": "php",
+    "sources": [
+      "https://stackoverflow.com/questions/8115683/php-curl-custom-headers/8115709"
+    ],
+    "tags": [
+      "get",
+      "synchronous",
+      "curl",
+      "output-to-variable",
+      "custom-headers"
+    ]
   }
 ]
