@@ -405,6 +405,9 @@
     "title": "Asynchronous GET request with .NET Core",
     "file_path": "snippets/csharp/simple-async.cs",
     "language": "csharp",
+    "sources": [
+      "https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=netframework-4.8"
+    ],
     "tags": [
       "get",
       "asynchronous",
@@ -416,6 +419,11 @@
     "title": "Simple GET request",
     "file_path": "snippets/csharp/simple-get.cs",
     "language": "csharp",
+    "sources": [
+      "https://docs.microsoft.com/en-us/dotnet/framework/network-programming/how-to-request-data-using-the-webrequest-class",
+      "https://docs.microsoft.com/en-us/dotnet/api/system.net.httpwebrequest",
+      "https://docs.microsoft.com/en-us/dotnet/api/system.net.webexception"
+    ],
     "tags": [
       "get",
       "synchronous",
@@ -426,6 +434,9 @@
     "title": "Basic Authentication",
     "file_path": "snippets/csharp/simple-basic-authentication.cs",
     "language": "csharp",
+    "sources": [
+      "https://stackoverflow.com/questions/4334521/httpwebrequest-using-basic-authentication"
+    ],
     "tags": [
       "get",
       "synchronous",

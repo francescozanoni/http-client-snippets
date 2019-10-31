@@ -1,6 +1,7 @@
 using System;
 using System.Net;
 using System.IO;
+using System.Text;
 
 class Program {
 
@@ -11,9 +12,9 @@ class Program {
       HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://www.example.com");
       
       string credentials = "my_username:my_password";
-      byte[] binaryCredentials = System.Text.Encoding.UTF8.GetBytes(credentials);
-      credentials = "Basic " + Convert.ToBase64String(binaryCredentials);
-      request.Headers.Add("AUTHORIZATION", credentials);
+      byte[] binaryCredentials = Encoding.GetEncoding("ISO-8859-1").GetBytes(credentials);
+      string encodedCredentials = Convert.ToBase64String(binaryCredentials);
+      request.Headers.Add("Authorization", "Basic " + encodedCredentials);
 
       HttpWebResponse response = null;
       try {
