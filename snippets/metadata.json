@@ -528,6 +528,20 @@
     ]
   },
   {
+    "title": "GET request to variable with curl",
+    "file_path": "snippets/c/curl-to-variable-get.c",
+    "language": "c",
+    "sources": [
+      "https://curl.haxx.se/libcurl/c/getinmemory.html"
+    ],
+    "tags": [
+      "get",
+      "synchronous",
+      "curl",
+      "output-to-variable"
+    ]
+  },
+  {
     "title": "GET request with curl",
     "file_path": "snippets/php/curl-get.php",
     "language": "php",
