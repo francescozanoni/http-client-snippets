@@ -26,6 +26,8 @@
 </h1>
 
 <div id="languages"><strong>Languages: </strong></div>
+<div id="paradigms"><strong>Paradigms: </strong></div>
+<div id="outputs"><strong>Output: </strong></div>
 <div id="tags"><strong>Tags: </strong></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
@@ -40,21 +42,26 @@
 
     var BoxBuilder = {
         "template": '<div class="box">' +
-            '<div class="header"></div>' +
+            '<div class="header"><span class="language"></span>: </div>' +
             '<pre class="snippet"></pre>' +
             '<div class="tags"></div>' +
+            '<div class="paradigm"></div>' +
+            '<div class="output"></div>' +
             '<div class="sources"></div>' +
             '</div>',
         "build": function (metadata) {
             var box = $(this.template);
             box.data("language", metadata.language);
             box.data("tags", metadata.tags.join(","));
-            box.find(".header").text(formatLanguageName(metadata.language) + ': ' + metadata.title);
+            box.find(".header .language").text(formatLanguageName(metadata.language));
+            box.find(".header").append(metadata.title);
             box.find(".snippet").attr("class", box.find(".snippet").attr("class") + " " + metadata.language);
             if (metadata.tags) {
                 box.find(".tags").text("Tags: ");
                 box.find(".tags").append(metadata.tags.join(", "));
             }
+            box.data("paradigm", metadata.paradigm);
+            box.data("output", metadata.output);
             if (metadata.sources) {
                 box.find(".sources").text("Sources:");
                 $.each(metadata.sources, function (index, source) {
@@ -71,8 +78,10 @@
     $(document).ready(function () {
         $.getJSON("snippets/metadata.json", function (metadata) {
 
-            var tags = [];
             var languages = [];
+            var paradigms = [];
+            var outputs = [];
+            var tags = [];
 
             for (var i = 0; i < metadata.length; i++) {
                 var box = BoxBuilder.build(metadata[i]);
@@ -83,6 +92,8 @@
                 });
                 $("body").append(box);
                 languages = languages.concat([metadata[i].language]).filter(onlyUnique).sort();
+                paradigms = paradigms.concat([metadata[i].paradigm]).filter(onlyUnique).sort();
+                outputs = outputs.concat([metadata[i].output]).filter(onlyUnique).sort();
                 tags = tags.concat(metadata[i].tags).filter(onlyUnique).sort();
             }
 
@@ -90,32 +101,70 @@
                 $("#languages").append('<input type="radio" name="language" value="' + language + '"/>');
                 $("#languages").append(formatLanguageName(language) + ' ');
             });
+            $.each(paradigms, function (index, paradigm) {
+                $("#paradigms").append('<input type="checkbox" name="paradigms" value="' + paradigm + '"/>');
+                $("#paradigms").append(paradigm + ' ');
+            });
+            $.each(outputs, function (index, output) {
+                $("#outputs").append('<input type="checkbox" name="outputs" value="' + output + '"/>');
+                $("#outputs").append(output + ' ');
+            });
             $.each(tags, function (index, tag) {
                 $("#tags").append('<input type="checkbox" name="tags" value="' + tag + '"/>');
                 $("#tags").append(tag + ' ');
             });
 
-            $("#tags input, #languages input").click(function (e) {
+            $("#languages input, #paradigms input, #outputs input, #tags input").click(function (e) {
                 var language = $("#languages input:checked").val();
+                var paradigms = [];
+                var outputs = [];
                 var tags = [];
+                $("#paradigms input:checked").each(function () {
+                    paradigms.push($(this).val());
+                });
+                $("#outputs input:checked").each(function () {
+                    outputs.push($(this).val());
+                });
                 $("#tags input:checked").each(function () {
                     tags.push($(this).val());
                 });
                 $(".box").hide();
                 $(".box").each(function () {
-                    if (language && tags.length === 0) {
+                    if (language && paradigms.length === 0 && outputs.length === 0 && tags.length === 0) {
                         if ($(this).data("language") === language) {
                             $(this).show();
                         }
                     }
-                    if (!language && tags.length > 0) {
+                    if (!language && (paradigms.length > 0 || outputs.length > 0 || tags.length > 0)) {
+                        if ($(this).data("paradigm").split(",").filter(function (n) {
+                            return paradigms.indexOf(n) !== -1;
+                        }).length > 0) {
+                            $(this).show();
+                        }
+                        if ($(this).data("output").split(",").filter(function (n) {
+                            return outputs.indexOf(n) !== -1;
+                        }).length > 0) {
+                            $(this).show();
+                        }
                         if ($(this).data("tags").split(",").filter(function (n) {
                             return tags.indexOf(n) !== -1;
                         }).length > 0) {
                             $(this).show();
                         }
                     }
-                    if (language && tags.length > 0) {
+                    if (language && (paradigms.length > 0 || outputs.length > 0 || tags.length > 0)) {
+                        if ($(this).data("language") === language &&
+                            $(this).data("paradigm").split(",").filter(function (n) {
+                                return paradigms.indexOf(n) !== -1;
+                            }).length > 0) {
+                            $(this).show();
+                        }
+                        if ($(this).data("language") === language &&
+                            $(this).data("output").split(",").filter(function (n) {
+                                return outputs.indexOf(n) !== -1;
+                            }).length > 0) {
+                            $(this).show();
+                        }
                         if ($(this).data("language") === language &&
                             $(this).data("tags").split(",").filter(function (n) {
                                 return tags.indexOf(n) !== -1;

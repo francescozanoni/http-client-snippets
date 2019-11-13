@@ -23,8 +23,11 @@ h1 object {
 }
 
 .box .header {
-    font-weight: bold;
     margin-bottom: 0.5em;
+}
+
+.box .header .language {
+    font-weight: bold;
 }
 
 .box .tags {
@@ -39,6 +42,6 @@ h1 object {
     font-size: 80%;
 }
 
-#languages, #tags {
+#languages, #paradigms, #outputs, #tags {
     margin: 0.3em;
 }

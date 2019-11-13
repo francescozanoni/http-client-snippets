@@ -3,152 +3,152 @@
     "title": "Simple GET with file_get_contents()",
     "file_path": "snippets/php/simple-get.php",
     "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "https://www.php.net/manual/en/function.file-get-contents.php",
       "https://www.php.net/manual/en/context.http.php"
     ],
     "tags": [
-      "get",
-      "synchronous",
-      "output-to-variable"
+      "get"
     ]
   },
   {
     "title": "Concurrent GET with multicurl",
     "file_path": "snippets/php/curl-concurrent-get.php",
     "language": "php",
+    "paradigm": "concurrent",
+    "output": "variable",
     "sources": [
       "http://arguments.callee.info/2010/02/21/multiple-curl-requests-with-php"
     ],
     "tags": [
       "get",
-      "curl",
-      "concurrent",
-      "output-to-variable"
+      "curl"
     ]
   },
   {
     "title": "Checked concurrent GET with multicurl",
     "file_path": "snippets/php/curl-concurrent-with-check-get.php",
     "language": "php",
+    "paradigm": "concurrent",
+    "output": "variable",
     "sources": [
       "http://arguments.callee.info/2010/02/21/multiple-curl-requests-with-php"
     ],
     "tags": [
       "get",
-      "curl",
-      "concurrent",
-      "output-to-variable"
+      "curl"
     ]
   },
   {
     "title": "Concurrent download with Guzzle",
     "file_path": "snippets/php/guzzle-concurrent-get.php",
     "language": "php",
+    "paradigm": "concurrent",
+    "output": "file",
     "sources": [
       "http://docs.guzzlephp.org/en/stable/quickstart.html",
       "https://www.flynsarmy.com/2018/07/downloading-multiple-files-simultaneously-with-guzzle"
     ],
     "tags": [
       "get",
-      "guzzle",
-      "concurrent",
-      "output-to-file"
+      "guzzle"
     ]
   },
   {
     "title": "GET request to console with wget",
     "file_path": "snippets/bash/wget-to-console-get.sh",
     "language": "bash",
+    "paradigm": "synchronous",
+    "output": "console",
     "sources": [
       "https://stackoverflow.com/questions/12120935/wget-output-document-and-headers-to-stdout"
     ],
     "tags": [
       "get",
-      "synchronous",
-      "wget",
-      "output-to-console"
+      "wget"
     ]
   },
   {
     "title": "GET request to variable with wget",
     "file_path": "snippets/bash/wget-to-variable-get.sh",
     "language": "bash",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "https://stackoverflow.com/questions/12120935/wget-output-document-and-headers-to-stdout"
     ],
     "tags": [
       "get",
-      "synchronous",
-      "wget",
-      "output-to-variable"
+      "wget"
     ]
   },
   {
     "title": "Download file with wget",
     "file_path": "snippets/bash/wget-to-file-get.sh",
     "language": "bash",
+    "paradigm": "synchronous",
+    "output": "file",
     "sources": [
       "https://www.gnu.org/software/wget/manual/wget.html#index-output-file"
     ],
     "tags": [
       "get",
-      "synchronous",
-      "wget",
-      "output-to-file"
+      "wget"
     ]
   },
   {
     "title": "GET request to console with curl",
     "file_path": "snippets/bash/curl-to-console-get.sh",
     "language": "bash",
+    "paradigm": "synchronous",
+    "output": "console",
     "sources": [
       "https://curl.haxx.se/docs/manpage.html"
     ],
     "tags": [
       "get",
-      "synchronous",
-      "curl",
-      "output-to-console"
+      "curl"
     ]
   },
   {
     "title": "Download file with curl",
     "file_path": "snippets/bash/curl-to-file-get.sh",
     "language": "bash",
+    "paradigm": "synchronous",
+    "output": "file",
     "sources": [
       "https://curl.haxx.se/docs/manpage.html#-o"
     ],
     "tags": [
       "get",
-      "synchronous",
-      "curl",
-      "output-to-file"
+      "curl"
     ]
   },
   {
     "title": "GET request to variable with curl",
     "file_path": "snippets/bash/curl-to-variable-get.sh",
     "language": "bash",
+    "paradigm": "synchronous",
+    "output": "variable",
     "tags": [
       "get",
-      "synchronous",
-      "curl",
-      "output-to-variable"
+      "curl"
     ]
   },
   {
     "title": "Basic Authentication with curl",
     "file_path": "snippets/bash/curl-basic-authentication.sh",
     "language": "bash",
+    "paradigm": "synchronous",
+    "output": "console",
     "sources": [
       "https://ec.haxx.se/http-auth.html"
     ],
     "tags": [
       "get",
-      "synchronous",
       "curl",
-      "output-to-console",
       "basic-authentication"
     ]
   },
@@ -156,15 +156,15 @@
     "title": "Cookies with curl",
     "file_path": "snippets/bash/curl-cookies.sh",
     "language": "bash",
+    "paradigm": "synchronous",
+    "output": "console",
     "sources": [
       "https://ec.haxx.se/http-cookies.html",
       "https://curl.haxx.se/docs/manpage.html"
     ],
     "tags": [
       "get",
-      "synchronous",
       "curl",
-      "output-to-console",
       "basic-authentication",
       "cookies"
     ]
@@ -173,14 +173,14 @@
     "title": "Basic Authentication with wget",
     "file_path": "snippets/bash/wget-basic-authentication.sh",
     "language": "bash",
+    "paradigm": "synchronous",
+    "output": "console",
     "sources": [
       "https://cxlabs.sap.com/2012/07/27/using-wget-with-basic-authentication"
     ],
     "tags": [
       "get",
-      "synchronous",
       "wget",
-      "output-to-console",
       "basic-authentication"
     ]
   },
@@ -188,14 +188,14 @@
     "title": "POST request with JSON body with curl",
     "file_path": "snippets/bash/curl-json-post.sh",
     "language": "bash",
+    "paradigm": "synchronous",
+    "output": "console",
     "sources": [
       "https://gist.github.com/subfuzion/08c5d85437d5d4f00e58"
     ],
     "tags": [
       "post",
-      "synchronous",
       "curl",
-      "output-to-console",
       "json"
     ]
   },
@@ -203,42 +203,42 @@
     "title": "POST request with curl",
     "file_path": "snippets/bash/curl-post.sh",
     "language": "bash",
+    "paradigm": "synchronous",
+    "output": "console",
     "sources": [
       "https://gist.github.com/subfuzion/08c5d85437d5d4f00e58"
     ],
     "tags": [
       "post",
-      "synchronous",
-      "curl",
-      "output-to-console"
+      "curl"
     ]
   },
   {
     "title": "POST request with curl",
     "file_path": "snippets/php/curl-post.php",
     "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "https://stackoverflow.com/questions/2138527/php-curl-http-post-sample-code#2138534"
     ],
     "tags": [
       "post",
-      "synchronous",
-      "curl",
-      "output-to-variable"
+      "curl"
     ]
   },
   {
     "title": "GET request with query string with curl",
     "file_path": "snippets/php/curl-query-string-get.php",
     "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "http://docs.php.net/manual/da/function.http-build-query.php"
     ],
     "tags": [
       "get",
-      "synchronous",
       "curl",
-      "output-to-variable",
       "query-string"
     ]
   },
@@ -246,14 +246,14 @@
     "title": "POST request with JSON body with curl",
     "file_path": "snippets/php/curl-json-post.php",
     "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "https://tecadmin.net/post-json-data-php-curl/"
     ],
     "tags": [
       "post",
-      "synchronous",
       "curl",
-      "output-to-variable",
       "json"
     ]
   },
@@ -261,14 +261,14 @@
     "title": "Basic Authentication with curl",
     "file_path": "snippets/php/curl-basic-authentication.php",
     "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "https://stackoverflow.com/questions/2140419/how-do-i-make-a-request-using-http-basic-authentication-with-php-curl#2140445"
     ],
     "tags": [
       "get",
-      "synchronous",
       "curl",
-      "output-to-variable",
       "basic-authentication"
     ]
   },
@@ -276,29 +276,29 @@
     "title": "Simple GET request with jQuery",
     "file_path": "snippets/javascript/jquery-get.js",
     "language": "javascript",
+    "paradigm": "asynchronous",
+    "output": "variable",
     "sources": [
       "https://api.jquery.com/jQuery.get/#jqxhr-object",
       "https://api.jquery.com/jQuery.ajax"
     ],
     "tags": [
       "get",
-      "asynchronous",
-      "jquery",
-      "output-to-variable"
+      "jquery"
     ]
   },
   {
     "title": "GET request with query string with jQuery",
     "file_path": "snippets/javascript/jquery-query-string-get.js",
     "language": "javascript",
+    "paradigm": "asynchronous",
+    "output": "variable",
     "sources": [
       "https://api.jquery.com/jQuery.get"
     ],
     "tags": [
       "get",
-      "asynchronous",
       "jquery",
-      "output-to-variable",
       "query-string"
     ]
   },
@@ -306,15 +306,15 @@
     "title": "Basic Authentication with jQuery",
     "file_path": "snippets/javascript/jquery-basic-authentication.js",
     "language": "javascript",
+    "paradigm": "asynchronous",
+    "output": "variable",
     "sources": [
       "https://stackoverflow.com/questions/5507234/use-basic-authentication-with-jquery-and-ajax#5507289",
       "https://api.jquery.com/jQuery.ajax"
     ],
     "tags": [
       "get",
-      "asynchronous",
       "jquery",
-      "output-to-variable",
       "basic-authentication"
     ]
   },
@@ -322,40 +322,40 @@
     "title": "GET request with Node",
     "file_path": "snippets/javascript/node-get.js",
     "language": "javascript",
+    "paradigm": "asynchronous",
+    "output": "variable",
     "sources": [
       "https://www.twilio.com/blog/2017/08/http-requests-in-node-js.html"
     ],
     "tags": [
       "get",
-      "asynchronous",
-      "node",
-      "output-to-variable"
+      "node"
     ]
   },
   {
     "title": "Simple POST with file_get_contents()",
     "file_path": "snippets/php/simple-post.php",
     "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "https://www.php.net/manual/en/context.http.php"
     ],
     "tags": [
-      "post",
-      "synchronous",
-      "output-to-variable"
+      "post"
     ]
   },
   {
     "title": "Simple Basic Authentication",
     "file_path": "snippets/php/simple-basic-authentication.php",
     "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "https://stackoverflow.com/questions/7732634/making-a-http-get-request-with-http-basic-authentication#21565794"
     ],
     "tags": [
       "get",
-      "synchronous",
-      "output-to-variable",
       "basic-authentication"
     ]
   },
@@ -363,13 +363,13 @@
     "title": "GET request with Guzzle",
     "file_path": "snippets/php/guzzle-get.php",
     "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "http://docs.guzzlephp.org/en/stable/quickstart.html#making-a-request"
     ],
     "tags": [
       "get",
-      "synchronous",
-      "output-to-variable",
       "guzzle"
     ]
   },
@@ -377,13 +377,13 @@
     "title": "GET request with Guzzle",
     "file_path": "snippets/php/guzzle-get-2.php",
     "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "http://docs.guzzlephp.org/en/stable/quickstart.html#creating-a-client"
     ],
     "tags": [
       "get",
-      "synchronous",
-      "output-to-variable",
       "guzzle"
     ]
   },
@@ -391,13 +391,13 @@
     "title": "POST request with Guzzle",
     "file_path": "snippets/php/guzzle-post.php",
     "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "http://docs.guzzlephp.org/en/stable/quickstart.html#post-form-requests"
     ],
     "tags": [
       "post",
-      "synchronous",
-      "output-to-variable",
       "guzzle"
     ]
   },
@@ -405,14 +405,14 @@
     "title": "GET request with query string with Guzzle",
     "file_path": "snippets/php/guzzle-query-string-get.php",
     "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "http://docs.guzzlephp.org/en/stable/quickstart.html#query-string-parameters"
     ],
     "tags": [
       "get",
-      "synchronous",
       "guzzle",
-      "output-to-variable",
       "query-string"
     ]
   },
@@ -420,13 +420,13 @@
     "title": "Custom headers with Guzzle",
     "file_path": "snippets/php/guzzle-custom-headers-get.php",
     "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "http://docs.guzzlephp.org/en/stable/request-options.html#headers"
     ],
     "tags": [
       "get",
-      "synchronous",
-      "output-to-variable",
       "custom-headers",
       "guzzle"
     ]
@@ -435,13 +435,13 @@
     "title": "Asynchronous GET request with .NET Core",
     "file_path": "snippets/csharp/simple-async.cs",
     "language": "csharp",
+    "paradigm": "asynchronous",
+    "output": "variable",
     "sources": [
       "https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=netframework-4.8"
     ],
     "tags": [
       "get",
-      "asynchronous",
-      "output-to-variable",
       "dot-net-core"
     ]
   },
@@ -449,28 +449,28 @@
     "title": "Simple GET request",
     "file_path": "snippets/csharp/simple-get.cs",
     "language": "csharp",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "https://docs.microsoft.com/en-us/dotnet/framework/network-programming/how-to-request-data-using-the-webrequest-class",
       "https://docs.microsoft.com/en-us/dotnet/api/system.net.httpwebrequest",
       "https://docs.microsoft.com/en-us/dotnet/api/system.net.webexception"
     ],
     "tags": [
-      "get",
-      "synchronous",
-      "output-to-variable"
+      "get"
     ]
   },
   {
     "title": "Basic Authentication",
     "file_path": "snippets/csharp/simple-basic-authentication.cs",
     "language": "csharp",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "https://stackoverflow.com/questions/4334521/httpwebrequest-using-basic-authentication"
     ],
     "tags": [
       "get",
-      "synchronous",
-      "output-to-variable",
       "basic-authentication"
     ]
   },
@@ -478,13 +478,13 @@
     "title": "PSR-7 GET request with Guzzle",
     "file_path": "snippets/php/guzzle-psr7-get.php",
     "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "http://docs.guzzlephp.org/en/stable/quickstart.html#sending-requests"
     ],
     "tags": [
       "get",
-      "synchronous",
-      "output-to-variable",
       "guzzle",
       "psr-7"
     ]
@@ -493,14 +493,14 @@
     "title": "Basic Authentication with Guzzle",
     "file_path": "snippets/php/guzzle-basic-authentication.php",
     "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "http://docs.guzzlephp.org/en/stable/request-options.html#auth"
     ],
     "tags": [
       "get",
-      "synchronous",
       "guzzle",
-      "output-to-variable",
       "basic-authentication"
     ]
   },
@@ -508,23 +508,23 @@
     "title": "Simple GET request",
     "file_path": "snippets/java/simple-get.java",
     "language": "java",
+    "paradigm": "synchronous",
+    "output": "variable",
     "tags": [
-      "get",
-      "synchronous",
-      "output-to-variable"
+      "get"
     ]
   },
   {
     "title": "Asynchronous GET with Swoole",
     "file_path": "snippets/php/swoole-async-get.php",
     "language": "php",
+    "paradigm": "asynchronous",
+    "output": "variable",
     "sources": [
       "https://www.swoole.co.uk/#get-started"
     ],
     "tags": [
       "get",
-      "asynchronous",
-      "output-to-variable",
       "swoole"
     ]
   },
@@ -532,13 +532,13 @@
     "title": "Custom headers with Swoole",
     "file_path": "snippets/php/swoole-async-custom-headers-get.php",
     "language": "php",
+    "paradigm": "asynchronous",
+    "output": "variable",
     "sources": [
       "https://www.swoole.co.uk/#get-started"
     ],
     "tags": [
       "get",
-      "asynchronous",
-      "output-to-variable",
       "custom-headers",
       "swoole"
     ]
@@ -547,56 +547,56 @@
     "title": "GET request to console with curl",
     "file_path": "snippets/c/curl-to-console-get.c",
     "language": "c",
+    "paradigm": "synchronous",
+    "output": "console",
     "sources": [
       "https://curl.haxx.se/libcurl/c/simple.html"
     ],
     "tags": [
       "get",
-      "synchronous",
-      "curl",
-      "output-to-console"
+      "curl"
     ]
   },
   {
     "title": "GET request to variable with curl",
     "file_path": "snippets/c/curl-to-variable-get.c",
     "language": "c",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "https://curl.haxx.se/libcurl/c/getinmemory.html"
     ],
     "tags": [
       "get",
-      "synchronous",
-      "curl",
-      "output-to-variable"
+      "curl"
     ]
   },
   {
     "title": "GET request with curl",
     "file_path": "snippets/php/curl-get.php",
     "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "https://www.php.net/manual/en/curl.examples.php"
     ],
     "tags": [
       "get",
-      "synchronous",
-      "curl",
-      "output-to-variable"
+      "curl"
     ]
   },
   {
     "title": "Custom headers with curl",
     "file_path": "snippets/php/curl-custom-headers-get.php",
     "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
     "sources": [
       "https://stackoverflow.com/questions/8115683/php-curl-custom-headers/8115709"
     ],
     "tags": [
       "get",
-      "synchronous",
       "curl",
-      "output-to-variable",
       "custom-headers"
     ]
   },
@@ -604,14 +604,14 @@
     "title": "Cookies with wget",
     "file_path": "snippets/bash/wget-cookies.sh",
     "language": "bash",
+    "paradigm": "synchronous",
+    "output": "console",
     "sources": [
       "https://www.apharmony.com/software-sagacity/2014/10/using-wget-with-cookies"
     ],
     "tags": [
       "get",
-      "synchronous",
       "wget",
-      "output-to-console",
       "basic-authentication",
       "cookies"
     ]
