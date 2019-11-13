@@ -387,6 +387,21 @@
     ]
   },
   {
+    "title": "GET request with query string with Guzzle",
+    "file_path": "snippets/php/guzzle-query-string-get.php",
+    "language": "php",
+    "sources": [
+      "http://docs.guzzlephp.org/en/stable/quickstart.html#query-string-parameters"
+    ],
+    "tags": [
+      "get",
+      "synchronous",
+      "guzzle",
+      "output-to-variable",
+      "query-string"
+    ]
+  },
+  {
     "title": "Custom headers with Guzzle",
     "file_path": "snippets/php/guzzle-custom-headers-get.php",
     "language": "php",
