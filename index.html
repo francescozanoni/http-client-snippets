@@ -153,23 +153,22 @@
                         }
                     }
                     if (language && (paradigms.length > 0 || outputs.length > 0 || tags.length > 0)) {
-                        if ($(this).data("language") === language &&
-                            $(this).data("paradigm").split(",").filter(function (n) {
+                        if ($(this).data("language") === language) {
+                            if ($(this).data("paradigm").split(",").filter(function (n) {
                                 return paradigms.indexOf(n) !== -1;
                             }).length > 0) {
-                            $(this).show();
-                        }
-                        if ($(this).data("language") === language &&
-                            $(this).data("output").split(",").filter(function (n) {
+                                $(this).show();
+                            }
+                            if ($(this).data("output").split(",").filter(function (n) {
                                 return outputs.indexOf(n) !== -1;
                             }).length > 0) {
-                            $(this).show();
-                        }
-                        if ($(this).data("language") === language &&
-                            $(this).data("tags").split(",").filter(function (n) {
+                                $(this).show();
+                            }
+                            if ($(this).data("tags").split(",").filter(function (n) {
                                 return tags.indexOf(n) !== -1;
                             }).length > 0) {
-                            $(this).show();
+                                $(this).show();
+                            }
                         }
                     }
                 });
