@@ -4,7 +4,7 @@ $payload = http_build_query([
 ]);
 
 $c = curl_init();
-curl_setopt($c, CURLOPT_URL,"http://www.example.com");
+curl_setopt($c, CURLOPT_URL, "http://www.example.com");
 curl_setopt($c, CURLOPT_POST, 1);
 curl_setopt($c, CURLOPT_POSTFIELDS, $payload);
 curl_setopt($c, CURLOPT_RETURNTRANSFER, true);

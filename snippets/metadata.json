@@ -228,6 +228,21 @@
     ]
   },
   {
+    "title": "GET request with query string with curl",
+    "file_path": "snippets/php/curl-query-string-get.php",
+    "language": "php",
+    "sources": [
+      "http://docs.php.net/manual/da/function.http-build-query.php"
+    ],
+    "tags": [
+      "get",
+      "synchronous",
+      "curl",
+      "output-to-variable",
+      "query-string"
+    ]
+  },
+  {
     "title": "POST request with JSON body with curl",
     "file_path": "snippets/php/curl-json-post.php",
     "language": "php",

@@ -4,7 +4,7 @@ $payload = json_encode([
 ]);
 
 $c = curl_init();
-curl_setopt($c, CURLOPT_URL,"http://www.example.com");
+curl_setopt($c, CURLOPT_URL, "http://www.example.com");
 curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($c, CURLINFO_HEADER_OUT, true);
 curl_setopt($c, CURLOPT_POST, true);

@@ -6,7 +6,7 @@ $response = $client->get(
   [
     "query" => [
       "key1" => "value1",
-      "key2" => "value2"
+      "key2" => ["value2_1", "value2_2"]
     ]
   ]
 );
