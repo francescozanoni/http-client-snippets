@@ -23,7 +23,7 @@ function onlyUnique(value, index, self) {
     return self.indexOf(value) === index;
 }
 
-function formatLanguageName(language) {
+function formatLanguage(language) {
 
     var output = "";
 
@@ -45,5 +45,11 @@ function formatLanguageName(language) {
     }
 
     return output;
+
+}
+
+function formatMethod(method) {
+
+    return method.toUpperCase();
 
 }

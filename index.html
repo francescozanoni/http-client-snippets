@@ -46,9 +46,6 @@
             '<div class="header"><span class="language"></span>: </div>' +
             '<pre class="snippet"></pre>' +
             '<div class="tags"></div>' +
-            '<div class="paradigm"></div>' +
-            '<div class="output"></div>' +
-            '<div class="method"></div>' +
             '<div class="sources"></div>' +
             '</div>',
         "build": function (metadata) {
@@ -57,7 +54,7 @@
             if (metadata.tags) {
                 box.data("tags", metadata.tags.join(","));
             }
-            box.find(".header .language").text(formatLanguageName(metadata.language));
+            box.find(".header .language").text(formatLanguage(metadata.language));
             box.find(".header").append(metadata.title);
             box.find(".snippet").attr("class", box.find(".snippet").attr("class") + " " + metadata.language);
             if (metadata.tags) {
@@ -107,23 +104,23 @@
             }
 
             $.each(languages, function (index, language) {
-                $("#languages").append('<input type="checkbox" name="languages" value="' + language + '"/>');
-                $("#languages").append(formatLanguageName(language) + ' ');
+                $("#languages").append('<input type="checkbox" value="' + language + '"/>');
+                $("#languages").append(formatLanguage(language) + ' ');
             });
             $.each(paradigms, function (index, paradigm) {
-                $("#paradigms").append('<input type="checkbox" name="paradigms" value="' + paradigm + '"/>');
+                $("#paradigms").append('<input type="checkbox" value="' + paradigm + '"/>');
                 $("#paradigms").append(paradigm + ' ');
             });
             $.each(outputs, function (index, output) {
-                $("#outputs").append('<input type="checkbox" name="outputs" value="' + output + '"/>');
+                $("#outputs").append('<input type="checkbox" value="' + output + '"/>');
                 $("#outputs").append(output + ' ');
             });
             $.each(methods, function (index, method) {
-                $("#methods").append('<input type="checkbox" name="methods" value="' + method + '"/>');
-                $("#methods").append(method + ' ');
+                $("#methods").append('<input type="checkbox" value="' + method + '"/>');
+                $("#methods").append(formatMethod(method) + ' ');
             });
             $.each(tags, function (index, tag) {
-                $("#tags").append('<input type="checkbox" name="tags" value="' + tag + '"/>');
+                $("#tags").append('<input type="checkbox" value="' + tag + '"/>');
                 $("#tags").append(tag + ' ');
             });
 
