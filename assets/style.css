@@ -11,7 +11,8 @@ h1 a {
 }
 
 h1 object {
-    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
 }
 
 .box {

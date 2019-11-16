@@ -14,7 +14,7 @@
 <body>
 
 <h1>
-    HTTP client snippets
+    <object data="https://upload.wikimedia.org/wikipedia/commons/5/5b/HTTP_logo.svg" type="image/svg+xml" title="HTTP"></object> Client Snippets
     <a href="https://github.com/francescozanoni/http-client-snippets" target="_blank">
         <!--
         As reported at URL https://forums.lastpass.com/viewtopic.php?f=12&t=323095&p=1080525&hilit=Cannot+read+property+%27querySelectorAll%27+of+null#p1080525 ,
@@ -98,7 +98,7 @@
             }
 
             $.each(languages, function (index, language) {
-                $("#languages").append('<input type="radio" name="language" value="' + language + '"/>');
+                $("#languages").append('<input type="checkbox" name="languages" value="' + language + '"/>');
                 $("#languages").append(formatLanguageName(language) + ' ');
             });
             $.each(paradigms, function (index, paradigm) {
@@ -115,10 +115,15 @@
             });
 
             $("#languages input, #paradigms input, #outputs input, #tags input").click(function (e) {
-                var language = $("#languages input:checked").val();
+            
+                var languages = [];
                 var paradigms = [];
                 var outputs = [];
                 var tags = [];
+                
+                $("#languages input:checked").each(function () {
+                    languages.push($(this).val());
+                });
                 $("#paradigms input:checked").each(function () {
                     paradigms.push($(this).val());
                 });
@@ -128,50 +133,33 @@
                 $("#tags input:checked").each(function () {
                     tags.push($(this).val());
                 });
+                
                 $(".box").hide();
+                
+                // If no filters are used, no snippets are displayed.
+                if (languages.length === 0 &&
+                    paradigms.length === 0 &&
+                    outputs.length === 0 &&
+                    tags.length === 0) {
+                    return;
+                }
+                
                 $(".box").each(function () {
-                    if (language && paradigms.length === 0 && outputs.length === 0 && tags.length === 0) {
-                        if ($(this).data("language") === language) {
-                            $(this).show();
-                        }
-                    }
-                    if (!language && (paradigms.length > 0 || outputs.length > 0 || tags.length > 0)) {
-                        if ($(this).data("paradigm").split(",").filter(function (n) {
-                            return paradigms.indexOf(n) !== -1;
-                        }).length > 0) {
-                            $(this).show();
-                        }
-                        if ($(this).data("output").split(",").filter(function (n) {
-                            return outputs.indexOf(n) !== -1;
-                        }).length > 0) {
-                            $(this).show();
-                        }
-                        if ($(this).data("tags").split(",").filter(function (n) {
-                            return tags.indexOf(n) !== -1;
-                        }).length > 0) {
-                            $(this).show();
-                        }
-                    }
-                    if (language && (paradigms.length > 0 || outputs.length > 0 || tags.length > 0)) {
-                        if ($(this).data("language") === language) {
-                            if ($(this).data("paradigm").split(",").filter(function (n) {
-                                return paradigms.indexOf(n) !== -1;
-                            }).length > 0) {
-                                $(this).show();
-                            }
-                            if ($(this).data("output").split(",").filter(function (n) {
-                                return outputs.indexOf(n) !== -1;
-                            }).length > 0) {
-                                $(this).show();
-                            }
-                            if ($(this).data("tags").split(",").filter(function (n) {
-                                return tags.indexOf(n) !== -1;
-                            }).length > 0) {
-                                $(this).show();
-                            }
-                        }
+                    if (
+                        (languages.length === 0 || (languages.length > 0 && languages.indexOf($(this).data("language")) > -1))
+                        &&
+                        (paradigms.length === 0 || (paradigms.length > 0 && paradigms.indexOf($(this).data("paradigm")) > -1))
+                        &&
+                        (outputs.length === 0 || (outputs.length > 0 && outputs.indexOf($(this).data("output")) > -1))
+                        &&
+                        (tags.length === 0 || (tags.length > 0 && $(this).data("tags").split(",").filter(function (n) {
+                            return tags.indexOf(n) > -1;
+                        }).length > 0))
+                    ) {
+                        $(this).show();
                     }
                 });
+                
             });
 
         });
