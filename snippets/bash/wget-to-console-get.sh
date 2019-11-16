@@ -1,1 +1,1 @@
-wget -qO - http://www.example.com
+wget -qO - http://example.com

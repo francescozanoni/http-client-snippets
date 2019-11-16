@@ -13,7 +13,7 @@ $options = [
 ];
 
 $response = file_get_contents(
-  "http://www.example.com",
+  "http://example.com",
   false,
   stream_context_create($options)
 );

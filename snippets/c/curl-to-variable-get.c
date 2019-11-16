@@ -8,7 +8,7 @@ struct ChunkContainer {
   size_t size;
 };
 
-static size_t WriteStringCallback(void *buffer, size_t size, size_t nmemb, void *userPtr) {
+static size_t callback(void *buffer, size_t size, size_t nmemb, void *userPtr) {
   
   size_t realSize = size * nmemb;
   struct ChunkContainer *chunk = (struct ChunkContainer *)userPtr;
@@ -40,8 +40,8 @@ int main(void) {
   curl_global_init(CURL_GLOBAL_ALL);
  
   curl = curl_easy_init();
-  curl_easy_setopt(curl, CURLOPT_URL, "http://www.example.com");
-  curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteStringCallback);
+  curl_easy_setopt(curl, CURLOPT_URL, "http://example.com");
+  curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, callback);
   curl_easy_setopt(curl, CURLOPT_WRITEDATA, (void *)&chunk);
   result = curl_easy_perform(curl);
  

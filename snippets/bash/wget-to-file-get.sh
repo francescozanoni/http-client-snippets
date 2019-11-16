@@ -1,1 +1,1 @@
-wget -o file.html http://www.example.com
+wget -o file.html http://example.com

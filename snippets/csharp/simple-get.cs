@@ -8,7 +8,7 @@ class Program {
 
     try {
 
-      HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://www.example.com");
+      HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://example.com");
 
       HttpWebResponse response = null;
       try {

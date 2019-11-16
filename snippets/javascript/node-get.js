@@ -1,7 +1,7 @@
 const http = require("http");
 
 const options = {
-  hostname: "www.example.com",
+  hostname: "example.com",
   path: "/",
   method: "GET"
 };

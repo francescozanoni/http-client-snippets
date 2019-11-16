@@ -1,5 +1,5 @@
 $.ajax({
-  url: "http://www.example.com",
+  url: "http://example.com",
   beforeSend: function (xhr) {
     xhr.setRequestHeader(
       "Authorization",

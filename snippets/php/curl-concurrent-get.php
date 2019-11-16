@@ -1,7 +1,7 @@
 $urls = [
-  "http://www.example.com",
-  "http://www.example.net",
-  "http://www.example.org",
+  "http://example.com",
+  "http://example.net",
+  "http://example.org",
 ];
 
 $curls = [];

@@ -1,1 +1,1 @@
-curl http://www.example.com
+curl http://example.com

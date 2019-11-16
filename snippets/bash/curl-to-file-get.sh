@@ -1,1 +1,1 @@
-curl -o file.html http://www.example.com
+curl -o file.html http://example.com

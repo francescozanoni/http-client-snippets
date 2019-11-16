@@ -10,7 +10,7 @@ public class Program {
 
     try {
 
-      URL url = new URL("http://www.example.com");
+      URL url = new URL("http://example.com");
       HttpURLConnection c = (HttpURLConnection) url.openConnection();
 
       // Request is performed and response retrieved

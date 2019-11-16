@@ -1,4 +1,4 @@
-$.get("http://www.example.com")
+$.get("http://example.com")
   .done(function (data, textStatus, jqXHR) {
 
   })

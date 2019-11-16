@@ -1,5 +1,5 @@
 $.get(
-  "http://www.example.com",
+  "http://example.com",
   {"key1": "value1", "key2": "value2"}
 )
   .done(function (data, textStatus, jqXHR) {

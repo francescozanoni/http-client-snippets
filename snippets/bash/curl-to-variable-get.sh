@@ -1,1 +1,1 @@
-RESPONSE=$(curl -s http://www.example.com)
+RESPONSE=$(curl -s http://example.com)

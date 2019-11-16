@@ -9,7 +9,7 @@ class Program {
 
     try {
 
-      HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://www.example.com");
+      HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://example.com");
       
       string credentials = "my_username:my_password";
       byte[] binaryCredentials = Encoding.GetEncoding("ISO-8859-1").GetBytes(credentials);

@@ -169,7 +169,7 @@
                         &&
                         (methods.length === 0 || (methods.length > 0 && methods.indexOf($(this).data("method")) > -1))
                         &&
-                        (tags.length === 0 || (tags.length > 0 && $(this).data("tags").split(",").filter(function (n) {
+                        (tags.length === 0 || (tags.length > 0 && $(this).data("tags") && $(this).data("tags").split(",").filter(function (n) {
                             return tags.indexOf(n) > -1;
                         }).length > 0))
                     ) {

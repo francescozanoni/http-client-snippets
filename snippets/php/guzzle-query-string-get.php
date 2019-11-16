@@ -2,7 +2,7 @@ use GuzzleHttp\Client;
 
 $client = new Client();
 $response = $client->get(
-  "http://www.example.com",
+  "http://example.com",
   [
     "query" => [
       "key1" => "value1",
