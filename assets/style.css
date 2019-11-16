@@ -43,6 +43,6 @@ h1 object {
     font-size: 80%;
 }
 
-#languages, #paradigms, #outputs, #tags {
+#languages, #paradigms, #outputs, #methods, #tags {
     margin: 0.3em;
 }

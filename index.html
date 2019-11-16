@@ -28,6 +28,7 @@
 <div id="languages"><strong>Languages: </strong></div>
 <div id="paradigms"><strong>Paradigms: </strong></div>
 <div id="outputs"><strong>Output: </strong></div>
+<div id="methods"><strong>Methods: </strong></div>
 <div id="tags"><strong>Tags: </strong></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
@@ -47,12 +48,15 @@
             '<div class="tags"></div>' +
             '<div class="paradigm"></div>' +
             '<div class="output"></div>' +
+            '<div class="method"></div>' +
             '<div class="sources"></div>' +
             '</div>',
         "build": function (metadata) {
             var box = $(this.template);
             box.data("language", metadata.language);
-            box.data("tags", metadata.tags.join(","));
+            if (metadata.tags) {
+                box.data("tags", metadata.tags.join(","));
+            }
             box.find(".header .language").text(formatLanguageName(metadata.language));
             box.find(".header").append(metadata.title);
             box.find(".snippet").attr("class", box.find(".snippet").attr("class") + " " + metadata.language);
@@ -62,6 +66,7 @@
             }
             box.data("paradigm", metadata.paradigm);
             box.data("output", metadata.output);
+            box.data("method", metadata.method);
             if (metadata.sources) {
                 box.find(".sources").text("Sources:");
                 $.each(metadata.sources, function (index, source) {
@@ -81,6 +86,7 @@
             var languages = [];
             var paradigms = [];
             var outputs = [];
+            var methods = [];
             var tags = [];
 
             for (var i = 0; i < metadata.length; i++) {
@@ -94,7 +100,10 @@
                 languages = languages.concat([metadata[i].language]).filter(onlyUnique).sort();
                 paradigms = paradigms.concat([metadata[i].paradigm]).filter(onlyUnique).sort();
                 outputs = outputs.concat([metadata[i].output]).filter(onlyUnique).sort();
-                tags = tags.concat(metadata[i].tags).filter(onlyUnique).sort();
+                methods = methods.concat([metadata[i].method]).filter(onlyUnique).sort();
+                if (metadata[i].tags) {
+                    tags = tags.concat(metadata[i].tags).filter(onlyUnique).sort();
+                }
             }
 
             $.each(languages, function (index, language) {
@@ -109,16 +118,21 @@
                 $("#outputs").append('<input type="checkbox" name="outputs" value="' + output + '"/>');
                 $("#outputs").append(output + ' ');
             });
+            $.each(methods, function (index, method) {
+                $("#methods").append('<input type="checkbox" name="methods" value="' + method + '"/>');
+                $("#methods").append(method + ' ');
+            });
             $.each(tags, function (index, tag) {
                 $("#tags").append('<input type="checkbox" name="tags" value="' + tag + '"/>');
                 $("#tags").append(tag + ' ');
             });
 
-            $("#languages input, #paradigms input, #outputs input, #tags input").click(function (e) {
+            $("#languages input, #paradigms input, #outputs input, #methods input, #tags input").click(function (e) {
             
                 var languages = [];
                 var paradigms = [];
                 var outputs = [];
+                var methods = [];
                 var tags = [];
                 
                 $("#languages input:checked").each(function () {
@@ -130,6 +144,9 @@
                 $("#outputs input:checked").each(function () {
                     outputs.push($(this).val());
                 });
+                $("#methods input:checked").each(function () {
+                    methods.push($(this).val());
+                });
                 $("#tags input:checked").each(function () {
                     tags.push($(this).val());
                 });
@@ -140,6 +157,7 @@
                 if (languages.length === 0 &&
                     paradigms.length === 0 &&
                     outputs.length === 0 &&
+                    methods.length === 0 &&
                     tags.length === 0) {
                     return;
                 }
@@ -151,6 +169,8 @@
                         (paradigms.length === 0 || (paradigms.length > 0 && paradigms.indexOf($(this).data("paradigm")) > -1))
                         &&
                         (outputs.length === 0 || (outputs.length > 0 && outputs.indexOf($(this).data("output")) > -1))
+                        &&
+                        (methods.length === 0 || (methods.length > 0 && methods.indexOf($(this).data("method")) > -1))
                         &&
                         (tags.length === 0 || (tags.length > 0 && $(this).data("tags").split(",").filter(function (n) {
                             return tags.indexOf(n) > -1;
