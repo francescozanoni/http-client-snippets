@@ -35,12 +35,14 @@ h1 object {
     margin-top: 0.5em;
     font-style: italic;
     font-size: 80%;
+    float: left;
 }
 
 .box .sources {
     margin-top: 0.5em;
     font-style: italic;
     font-size: 80%;
+    float: right;
 }
 
 #languages, #paradigms, #outputs, #methods, #tags {
