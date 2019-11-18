@@ -11,8 +11,26 @@ h1 a {
 }
 
 h1 object {
-    height: 1.5em;
+    height: 2em;
     vertical-align: middle;
+}
+
+dt {
+    display: table-cell;
+    font-weight: bold;
+    padding: 0.2em 0.5em 0.2em 0;
+}
+
+dd {
+    display: table-cell;
+    padding: 0.2em 0;
+}
+
+#filters {
+    display: table;
+}
+#filters div {
+    display: table-row;
 }
 
 .box {
@@ -43,6 +61,7 @@ h1 object {
     font-style: italic;
     font-size: 80%;
     float: right;
+    padding-left: 1em;
 }
 
 #languages, #paradigms, #outputs, #methods, #tags {

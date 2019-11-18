@@ -14,22 +14,50 @@
 <body>
 
 <h1>
-    <object data="https://upload.wikimedia.org/wikipedia/commons/5/5b/HTTP_logo.svg" type="image/svg+xml" title="HTTP"></object> Client Snippets
+    <object data="https://upload.wikimedia.org/wikipedia/commons/5/5b/HTTP_logo.svg"
+            type="image/svg+xml"
+            title="HTTP">
+    </object>
+    Client Snippets
     <a href="https://github.com/francescozanoni/http-client-snippets" target="_blank">
         <!--
         As reported at URL https://forums.lastpass.com/viewtopic.php?f=12&t=323095&p=1080525&hilit=Cannot+read+property+%27querySelectorAll%27+of+null#p1080525 ,
         when SVG is used LastPass browser plugin causes the following error:
         Uncaught (in promise) TypeError: Cannot read property 'querySelectorAll' of null - onloadwff.js:71
         -->
-        <object data="https://simpleicons.org/icons/github.svg" type="image/svg+xml" title="GitHub repository"></object>
+        <object data="https://simpleicons.org/icons/github.svg"
+                type="image/svg+xml"
+                title="GitHub repository">
+        </object>
     </a>
 </h1>
 
-<div id="languages"><strong>Languages: </strong></div>
-<div id="paradigms"><strong>Paradigms: </strong></div>
-<div id="outputs"><strong>Output: </strong></div>
-<div id="methods"><strong>Methods: </strong></div>
-<div id="tags"><strong>Tags: </strong></div>
+<hr/>
+
+<dl id="filters">
+    <div>
+        <dt>Languages:</dt>
+        <dd id="languages"></dd>
+    </div>
+    <div>
+        <dt>Paradigms:</dt>
+        <dd id="paradigms"></dd>
+    </div>
+    <div>
+        <dt>Output:</dt>
+        <dd id="outputs"></dd>
+    </div>
+    <div>
+        <dt>Methods:</dt>
+        <dd id="methods"></dd>
+    </div>
+    <div>
+        <dt>Tags:</dt>
+        <dd id="tags"></dd>
+    </div>
+</dl>
+
+<hr/>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -42,18 +70,26 @@
     }
 
     var BoxBuilder = {
+
         "template": '<div class="box">' +
             '<div class="header"><span class="language"></span>: </div>' +
             '<pre class="snippet"></pre>' +
             '<div class="tags"></div>' +
             '<div class="sources"></div>' +
             '</div>',
+
         "build": function (metadata) {
+
             var box = $(this.template);
+
             box.data("language", metadata.language);
+            box.data("paradigm", metadata.paradigm);
+            box.data("output", metadata.output);
+            box.data("method", metadata.method);
             if (metadata.tags) {
                 box.data("tags", metadata.tags.join(","));
             }
+
             box.find(".header .language").text(formatLanguage(metadata.language));
             box.find(".header").append(metadata.title);
             box.find(".snippet").attr("class", box.find(".snippet").attr("class") + " " + metadata.language);
@@ -61,16 +97,15 @@
                 box.find(".tags").text("Tags: ");
                 box.find(".tags").append(metadata.tags.join(", "));
             }
-            box.data("paradigm", metadata.paradigm);
-            box.data("output", metadata.output);
-            box.data("method", metadata.method);
             if (metadata.sources) {
                 box.find(".sources").text("Sources:");
                 $.each(metadata.sources, function (index, source) {
                     box.find(".sources").append(' <a href="' + source + '" target="_blank">[' + (index + 1) + ']</a>');
                 });
             }
+
             return box;
+
         },
         "loadSnippet": function (box, metadata, callback) {
             box.find(".snippet").load(metadata.file_path, callback);
@@ -78,6 +113,7 @@
     };
 
     $(document).ready(function () {
+
         $.getJSON("snippets/metadata.json", function (metadata) {
 
             var languages = [];
@@ -104,34 +140,39 @@
             }
 
             $.each(languages, function (index, language) {
-                $("#languages").append('<input type="checkbox" value="' + language + '"/>');
-                $("#languages").append(formatLanguage(language) + ' ');
+                $("#languages")
+                    .append('<input type="checkbox" value="' + language + '"/>')
+                    .append(formatLanguage(language) + ' ');
             });
             $.each(paradigms, function (index, paradigm) {
-                $("#paradigms").append('<input type="checkbox" value="' + paradigm + '"/>');
-                $("#paradigms").append(paradigm + ' ');
+                $("#paradigms")
+                    .append('<input type="checkbox" value="' + paradigm + '"/>')
+                    .append(paradigm + ' ');
             });
             $.each(outputs, function (index, output) {
-                $("#outputs").append('<input type="checkbox" value="' + output + '"/>');
-                $("#outputs").append(output + ' ');
+                $("#outputs")
+                    .append('<input type="checkbox" value="' + output + '"/>')
+                    .append(output + ' ');
             });
             $.each(methods, function (index, method) {
-                $("#methods").append('<input type="checkbox" value="' + method + '"/>');
-                $("#methods").append(formatMethod(method) + ' ');
+                $("#methods")
+                    .append('<input type="checkbox" value="' + method + '"/>')
+                    .append(formatMethod(method) + ' ');
             });
             $.each(tags, function (index, tag) {
-                $("#tags").append('<input type="checkbox" value="' + tag + '"/>');
-                $("#tags").append(tag + ' ');
+                $("#tags")
+                    .append('<input type="checkbox" value="' + tag + '"/>')
+                    .append(tag + ' ');
             });
 
             $("#languages input, #paradigms input, #outputs input, #methods input, #tags input").click(function (e) {
-            
+
                 var languages = [];
                 var paradigms = [];
                 var outputs = [];
                 var methods = [];
                 var tags = [];
-                
+
                 $("#languages input:checked").each(function () {
                     languages.push($(this).val());
                 });
@@ -147,9 +188,9 @@
                 $("#tags input:checked").each(function () {
                     tags.push($(this).val());
                 });
-                
+
                 $(".box").hide();
-                
+
                 // If no filters are used, no snippets are displayed.
                 if (languages.length === 0 &&
                     paradigms.length === 0 &&
@@ -158,7 +199,7 @@
                     tags.length === 0) {
                     return;
                 }
-                
+
                 $(".box").each(function () {
                     if (
                         (languages.length === 0 || (languages.length > 0 && languages.indexOf($(this).data("language")) > -1))
@@ -176,10 +217,11 @@
                         $(this).show();
                     }
                 });
-                
+
             });
 
         });
+
     });
 </script>
 
