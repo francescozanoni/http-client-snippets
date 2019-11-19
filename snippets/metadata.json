@@ -270,6 +270,19 @@
     ]
   },
   {
+    "title": "Cookies with curl",
+    "file_path": "snippets/php/curl-cookies.php",
+    "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "tags": [
+      "curl",
+      "cookies",
+      "basic-authentication"
+    ]
+  },
+  {
     "title": "GET request with query string with curl",
     "file_path": "snippets/php/curl-query-string-get.php",
     "language": "php",
