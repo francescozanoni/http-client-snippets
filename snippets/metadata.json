@@ -256,6 +256,20 @@
     ]
   },
   {
+    "title": "Download file with curl",
+    "file_path": "snippets/php/curl-to-file-get.php",
+    "language": "php",
+    "paradigm": "synchronous",
+    "output": "file",
+    "method": "get",
+    "sources": [
+      "https://stackoverflow.com/questions/6409462/downloading-a-large-file-using-curl#6409531"
+    ],
+    "tags": [
+      "curl"
+    ]
+  },
+  {
     "title": "GET request with query string with curl",
     "file_path": "snippets/php/curl-query-string-get.php",
     "language": "php",
