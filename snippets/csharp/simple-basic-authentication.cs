@@ -9,27 +9,38 @@ class Program {
 
     try {
 
-      HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://example.com");
-      
-      string credentials = "my_username:my_password";
-      byte[] binaryCredentials = Encoding.GetEncoding("ISO-8859-1").GetBytes(credentials);
-      string encodedCredentials = Convert.ToBase64String(binaryCredentials);
+      HttpWebRequest request = null;
+      HttpWebResponse response = null;
+
+      string encodedCredentials = EncodeString("my_username:my_password");
+
+      request = (HttpWebRequest)WebRequest.Create("http://example.com");
       request.Headers.Add("Authorization", "Basic " + encodedCredentials);
 
-      HttpWebResponse response = null;
       try {
         response = (HttpWebResponse)request.GetResponse();
       } catch (WebException ex) {
         response = (HttpWebResponse)ex.Response;
       }
 
-      StreamReader reader = new StreamReader(response.GetResponseStream());
+      Stream responseStream = response.GetResponseStream();
+      StreamReader reader = new StreamReader(responseStream);
       string body = reader.ReadToEnd();
       reader.Close();
+      responseStream.Close();
 
     } catch (Exception ex) {
       // Custom error handling
     }
+
+  }
+
+  static string EncodeString(string inputDataString) {
+
+    byte[] dataBinary = Encoding.GetEncoding("ISO-8859-1").GetBytes(inputDataString);
+    string outputDataString = Convert.ToBase64String(dataBinary);
+
+    return outputDataString;
 
   }
 

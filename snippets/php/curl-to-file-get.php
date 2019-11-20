@@ -1,4 +1,4 @@
-$fp = fopen (__DIR__ . "/file.html", "w+");
+$fp = fopen("file.html", "w+");
 
 $c = curl_init();
 curl_setopt($c, CURLOPT_URL, "http://example.com");
