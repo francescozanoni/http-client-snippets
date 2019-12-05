@@ -664,5 +664,92 @@
       "basic-authentication",
       "cookies"
     ]
+  },
+  {
+    "title": "GET request with Axios",
+    "file_path": "snippets/javascript/axios-get.js",
+    "language": "javascript",
+    "paradigm": "asynchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://github.com/axios/axios"
+    ],
+    "tags": [
+      "axios"
+    ]
+  },
+  {
+    "title": "POST request with Axios",
+    "file_path": "snippets/javascript/axios-post.js",
+    "language": "javascript",
+    "paradigm": "asynchronous",
+    "output": "variable",
+    "method": "post",
+    "sources": [
+      "https://github.com/axios/axios"
+    ],
+    "tags": [
+      "axios"
+    ]
+  },
+  {
+    "title": "GET request with query string with Axios",
+    "file_path": "snippets/javascript/axios-query-string-get.js",
+    "language": "javascript",
+    "paradigm": "asynchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://github.com/axios/axios"
+    ],
+    "tags": [
+      "axios",
+      "query-string"
+    ]
+  },
+  {
+    "title": "Concurrent requests with Axios",
+    "file_path": "snippets/javascript/axios-concurrent-get.js",
+    "language": "javascript",
+    "paradigm": "concurrent",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://github.com/axios/axios"
+    ],
+    "tags": [
+      "axios"
+    ]
+  },
+  {
+    "title": "Basic Authentication with Axios",
+    "file_path": "snippets/javascript/axios-basic-authentication.js",
+    "language": "javascript",
+    "paradigm": "asynchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://github.com/axios/axios"
+    ],
+    "tags": [
+      "axios",
+      "basic-authentication"
+    ]
+  },
+  {
+    "title": "Custom headers with Axios",
+    "file_path": "snippets/javascript/axios-custom-headers-get.js",
+    "language": "javascript",
+    "paradigm": "asynchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://github.com/axios/axios"
+    ],
+    "tags": [
+      "axios",
+      "custom-headers"
+    ]
   }
 ]

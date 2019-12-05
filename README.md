@@ -3,7 +3,7 @@
 Languages/libraries:
  - PHP: curl, Guzzle, Swoole
  - Bash: wget, curl
- - JavaScript: jQuery, Node JS
+ - JavaScript: jQuery, Node, Axios
  - C#: .NET Core
  - Java
  - C: curl
