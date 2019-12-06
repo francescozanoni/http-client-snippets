@@ -13,6 +13,8 @@ h1 a {
 h1 object {
     height: 2em;
     vertical-align: middle;
+    /* https://stackoverflow.com/questions/11374059/make-an-html-svg-object-also-a-clickable-link#17133804 */
+    pointer-events: none;
 }
 
 dt {
@@ -29,6 +31,7 @@ dd {
 #filters {
     display: table;
 }
+
 #filters div {
     display: table-row;
 }
