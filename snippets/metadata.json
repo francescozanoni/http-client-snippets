@@ -751,5 +751,35 @@
       "axios",
       "custom-headers"
     ]
+  },
+  {
+    "title": "Custom user agent with curl",
+    "file_path": "snippets/php/curl-user-agent-get.php",
+    "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://davidwalsh.name/set-user-agent-php-curl-spoof"
+    ],
+    "tags": [
+      "curl",
+      "user-agent"
+    ]
+  },
+  {
+    "title": "Custom user agent with curl",
+    "file_path": "snippets/bash/curl-user-agent-get.sh",
+    "language": "bash",
+    "paradigm": "synchronous",
+    "output": "console",
+    "method": "get",
+    "sources": [
+      "https://www.cyberciti.biz/faq/curl-set-user-agent-command-linux-unix"
+    ],
+    "tags": [
+      "curl",
+      "user-agent"
+    ]
   }
 ]
