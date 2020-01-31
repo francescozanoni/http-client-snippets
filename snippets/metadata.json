@@ -781,5 +781,29 @@
       "curl",
       "user-agent"
     ]
+  },
+  {
+    "title": "Custom host resolution with curl",
+    "file_path": "snippets/php/curl-host-resolution-get.php",
+    "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "tags": [
+      "curl",
+      "host-resolution"
+    ]
+  },
+  {
+    "title": "Custom host resolution with curl (SSL)",
+    "file_path": "snippets/php/curl-host-resolution-ssl-get.php",
+    "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "tags": [
+      "curl",
+      "host-resolution"
+    ]
   }
 ]
