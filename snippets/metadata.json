@@ -805,5 +805,29 @@
       "curl",
       "host-resolution"
     ]
+  },
+  {
+    "title": "Custom host resolution with Guzzle",
+    "file_path": "snippets/php/guzzle-host-resolution-get.php",
+    "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "tags": [
+      "guzzle",
+      "host-resolution"
+    ]
+  },
+  {
+    "title": "Custom user agent with Guzzle",
+    "file_path": "snippets/php/guzzle-user-agent-get.php",
+    "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "tags": [
+      "guzzle",
+      "user-agent"
+    ]
   }
 ]
