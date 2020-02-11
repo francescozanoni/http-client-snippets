@@ -72,7 +72,7 @@
     var BoxBuilder = {
 
         "template": '<div class="box">' +
-            '<div class="header"><span class="language"></span>: </div>' +
+            '<div class="header"><span class="language"></span> </div>' +
             '<pre class="snippet"></pre>' +
             '<div class="tags"></div>' +
             '<div class="sources"></div>' +
@@ -90,7 +90,8 @@
                 box.data("tags", metadata.tags.join(","));
             }
 
-            box.find(".header .language").text(formatLanguage(metadata.language));
+            box.find(".header .language").html(getLanguageImageTag(metadata.language));
+            box.find(".header .language").attr("title", formatLanguage(metadata.language));
             box.find(".header").append(metadata.title);
             box.find(".snippet").attr("class", box.find(".snippet").attr("class") + " " + metadata.language);
             if (metadata.tags) {
@@ -127,6 +128,7 @@
                 BoxBuilder.loadSnippet(box, metadata[i], function (response) {
                     // https://stackoverflow.com/questions/24816/escaping-html-strings-with-jquery
                     $(this).text(response);
+                    $(this).attr("data-length", response.length);
                     hljs.highlightBlock(this);
                 });
                 $("body").append(box);
@@ -141,28 +143,38 @@
 
             $.each(languages, function (index, language) {
                 $("#languages")
-                    .append('<input type="checkbox" value="' + language + '"/>')
-                    .append(formatLanguage(language) + ' ');
+                    .append('<div>' +
+                        '<input type="checkbox" value="' + language + '" id="c' + i + '"/>' +
+                        '<label for="c' + i++ + '" title="' + formatLanguage(language) + '">' + getLanguageImageTag(language) + '</label> ' +
+                        '</div>');
             });
             $.each(paradigms, function (index, paradigm) {
                 $("#paradigms")
-                    .append('<input type="checkbox" value="' + paradigm + '"/>')
-                    .append(paradigm + ' ');
+                    .append('<div>' +
+                        '<input type="checkbox" value="' + paradigm + '" id="c' + i + '"/>' +
+                        '<label for="c' + i++ + '">' + paradigm + '</label> ' +
+                        '</div>');
             });
             $.each(outputs, function (index, output) {
                 $("#outputs")
-                    .append('<input type="checkbox" value="' + output + '"/>')
-                    .append(output + ' ');
+                    .append('<div>' +
+                        '<input type="checkbox" value="' + output + '" id="c' + i + '"/>' +
+                        '<label for="c' + i++ + '">' + output + '</label> ' +
+                        '</div>');
             });
             $.each(methods, function (index, method) {
                 $("#methods")
-                    .append('<input type="checkbox" value="' + method + '"/>')
-                    .append(formatMethod(method) + ' ');
+                    .append('<div>' +
+                        '<input type="checkbox" value="' + method + '" id="c' + i + '"/>' +
+                        '<label for="c' + i++ + '">' + formatMethod(method) + '</label> ' +
+                        '</div>');
             });
             $.each(tags, function (index, tag) {
                 $("#tags")
-                    .append('<input type="checkbox" value="' + tag + '"/>')
-                    .append(tag + ' ');
+                    .append('<div>' +
+                        '<input type="checkbox" value="' + tag + '" id="c' + i + '"/>' +
+                        '<label for="c' + i++ + '">' + tag + '</label> ' +
+                        '</div>');
             });
 
             $("#languages input, #paradigms input, #outputs input, #methods input, #tags input").click(function (e) {

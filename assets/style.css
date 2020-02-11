@@ -36,6 +36,10 @@ dd {
     display: table-row;
 }
 
+#filters dd div {
+    display: inline-block;
+}
+
 .box {
     float: left;
     padding: 0.5em;
@@ -69,4 +73,13 @@ dd {
 
 #languages, #paradigms, #outputs, #methods, #tags {
     margin: 0.3em;
+}
+
+#languages svg, #languages img, .box svg, .box img {
+    height: 1.5em;
+    vertical-align: middle;
+}
+
+#languages div {
+    margin-right: 1em;
 }

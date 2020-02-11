@@ -1,1 +1,2 @@
-wget -o file.html https://example.com --no-check-certificate
+wget -o file.html https://example.com \
+     --no-check-certificate
