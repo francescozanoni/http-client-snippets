@@ -12,6 +12,20 @@
     ]
   },
   {
+    "title": "Simple GET ignoring SSL",
+    "file_path": "snippets/php/simple-ignore-ssl-get.php",
+    "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://stackoverflow.com/questions/26148701/file-get-contents-ssl-operation-failed-with-code-1-failed-to-enable-crypto"
+    ],
+    "tags": [
+      "ignore-ssl"
+    ]
+  },
+  {
     "title": "Concurrent GET with multicurl",
     "file_path": "snippets/php/curl-concurrent-get.php",
     "language": "php",
@@ -97,6 +111,18 @@
     ]
   },
   {
+    "title": "Download file with wget ignoring SSL",
+    "file_path": "snippets/bash/wget-to-file-ignore-ssl-get.sh",
+    "language": "bash",
+    "paradigm": "synchronous",
+    "output": "file",
+    "method": "get",
+    "tags": [
+      "wget",
+      "ignore-ssl"
+    ]
+  },
+  {
     "title": "GET request to console with curl",
     "file_path": "snippets/bash/curl-to-console-get.sh",
     "language": "bash",
@@ -122,6 +148,22 @@
     ],
     "tags": [
       "curl"
+    ]
+  },
+  {
+    "title": "Download file with curl ignoring SSL",
+    "file_path": "snippets/bash/curl-to-file-ignore-ssl-get.sh",
+    "language": "bash",
+    "paradigm": "synchronous",
+    "output": "file",
+    "method": "get",
+    "sources": [
+      "https://curl.haxx.se/docs/manpage.html#-k",
+      "https://www.cyberciti.biz/faq/how-to-curl-ignore-ssl-certificate-warnings-command-option"
+    ],
+    "tags": [
+      "curl",
+      "ignore-ssl"
     ]
   },
   {

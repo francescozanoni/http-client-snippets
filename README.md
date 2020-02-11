@@ -1,6 +1,6 @@
 # HTTP client code snippets in multiple languages
 
-| Language       | Libraries                                                                                                                    |
+| LANGUAGE       | LIBRARIES/FRAMEWORKS                                                                                                         |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | **PHP**        | [cURL](https://www.php.net/manual/en/book.curl.php), [Guzzle](http://docs.guzzlephp.org), [Swoole](https://www.swoole.co.uk) |
 | **Bash**       | [Wget](https://www.gnu.org/software/wget), [cURL](https://curl.haxx.se)                                                      |
