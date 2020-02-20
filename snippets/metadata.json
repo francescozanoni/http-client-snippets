@@ -885,5 +885,20 @@
     "tags": [
       "curl"
     ]
+  },
+  {
+    "title": "GET request to variable with curl",
+    "file_path": "snippets/rust/curl-to-variable-get.rs",
+    "language": "rust",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://docs.rs/curl/0.5.0/curl",
+      "https://doc.rust-lang.org/std/str/fn.from_utf8.html"
+    ],
+    "tags": [
+      "curl"
+    ]
   }
 ]
