@@ -871,5 +871,19 @@
       "guzzle",
       "user-agent"
     ]
+  },
+  {
+    "title": "GET request to console with curl",
+    "file_path": "snippets/rust/curl-to-console-get.rs",
+    "language": "rust",
+    "paradigm": "synchronous",
+    "output": "console",
+    "method": "get",
+    "sources": [
+      "https://docs.rs/curl/0.5.0/curl"
+    ],
+    "tags": [
+      "curl"
+    ]
   }
 ]
