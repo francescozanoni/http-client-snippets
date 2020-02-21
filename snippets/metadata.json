@@ -900,5 +900,19 @@
     "tags": [
       "curl"
     ]
+  },
+  {
+    "title": "GET request to variable with curl",
+    "file_path": "snippets/rust/curl-to-variable-get-2.rs",
+    "language": "rust",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://docs.rs/curl/0.4.8/curl/easy/struct.Easy2.html"
+    ],
+    "tags": [
+      "curl"
+    ]
   }
 ]
