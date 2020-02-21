@@ -914,5 +914,20 @@
     "tags": [
       "curl"
     ]
+  },
+  {
+    "title": "Basic Authentication with curl",
+    "file_path": "snippets/rust/curl-basic-authentication.rs",
+    "language": "rust",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://docs.rs/curl/0.5.0/curl/easy/struct.Easy2.html"
+    ],
+    "tags": [
+      "curl",
+      "basic-authentication"
+    ]
   }
 ]
