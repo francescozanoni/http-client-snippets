@@ -929,5 +929,19 @@
       "curl",
       "basic-authentication"
     ]
+  },
+  {
+    "title": "POST request to variable with curl",
+    "file_path": "snippets/rust/curl-to-variable-post.rs",
+    "language": "rust",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "post",
+    "sources": [
+      "https://docs.rs/curl/0.5.0/curl/easy/struct.Easy2.html"
+    ],
+    "tags": [
+      "curl"
+    ]
   }
 ]
