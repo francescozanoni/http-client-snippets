@@ -65,7 +65,7 @@
       "https://www.flynsarmy.com/2018/07/downloading-multiple-files-simultaneously-with-guzzle"
     ],
     "tags": [
-      "guzzle"
+      "library"
     ]
   },
   {
@@ -381,7 +381,7 @@
       "https://api.jquery.com/jQuery.ajax"
     ],
     "tags": [
-      "jquery"
+      "library"
     ]
   },
   {
@@ -395,7 +395,7 @@
       "https://api.jquery.com/jQuery.get"
     ],
     "tags": [
-      "jquery",
+      "library",
       "query-string"
     ]
   },
@@ -411,7 +411,7 @@
       "https://api.jquery.com/jQuery.ajax"
     ],
     "tags": [
-      "jquery",
+      "library",
       "basic-authentication"
     ]
   },
@@ -465,7 +465,7 @@
       "http://docs.guzzlephp.org/en/stable/quickstart.html#making-a-request"
     ],
     "tags": [
-      "guzzle"
+      "library"
     ]
   },
   {
@@ -479,7 +479,7 @@
       "http://docs.guzzlephp.org/en/stable/quickstart.html#creating-a-client"
     ],
     "tags": [
-      "guzzle"
+      "library"
     ]
   },
   {
@@ -493,7 +493,7 @@
       "http://docs.guzzlephp.org/en/stable/quickstart.html#post-form-requests"
     ],
     "tags": [
-      "guzzle"
+      "library"
     ]
   },
   {
@@ -507,7 +507,7 @@
       "http://docs.guzzlephp.org/en/stable/quickstart.html#query-string-parameters"
     ],
     "tags": [
-      "guzzle",
+      "library",
       "query-string"
     ]
   },
@@ -523,7 +523,7 @@
     ],
     "tags": [
       "custom-headers",
-      "guzzle"
+      "library"
     ]
   },
   {
@@ -578,7 +578,7 @@
       "http://docs.guzzlephp.org/en/stable/quickstart.html#sending-requests"
     ],
     "tags": [
-      "guzzle",
+      "library",
       "psr-7"
     ]
   },
@@ -593,7 +593,7 @@
       "http://docs.guzzlephp.org/en/stable/request-options.html#auth"
     ],
     "tags": [
-      "guzzle",
+      "library",
       "basic-authentication"
     ]
   },
@@ -718,7 +718,7 @@
       "https://github.com/axios/axios"
     ],
     "tags": [
-      "axios"
+      "library"
     ]
   },
   {
@@ -732,7 +732,7 @@
       "https://github.com/axios/axios"
     ],
     "tags": [
-      "axios"
+      "library"
     ]
   },
   {
@@ -746,7 +746,7 @@
       "https://github.com/axios/axios"
     ],
     "tags": [
-      "axios",
+      "library",
       "query-string"
     ]
   },
@@ -761,7 +761,7 @@
       "https://github.com/axios/axios"
     ],
     "tags": [
-      "axios"
+      "library"
     ]
   },
   {
@@ -775,7 +775,7 @@
       "https://github.com/axios/axios"
     ],
     "tags": [
-      "axios",
+      "library",
       "basic-authentication"
     ]
   },
@@ -790,7 +790,7 @@
       "https://github.com/axios/axios"
     ],
     "tags": [
-      "axios",
+      "library",
       "custom-headers"
     ]
   },
@@ -856,7 +856,7 @@
     "output": "variable",
     "method": "get",
     "tags": [
-      "guzzle",
+      "library",
       "host-resolution"
     ]
   },
@@ -868,7 +868,7 @@
     "output": "variable",
     "method": "get",
     "tags": [
-      "guzzle",
+      "library",
       "user-agent"
     ]
   },
