@@ -80,6 +80,6 @@ dd {
     vertical-align: middle;
 }
 
-#languages div {
-    margin-right: 1em;
+#languages div, #paradigms div, #outputs div, #methods div, #tags div {
+    margin-right: 0.5em;
 }
