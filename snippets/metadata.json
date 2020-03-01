@@ -943,5 +943,34 @@
     "tags": [
       "curl"
     ]
+  },
+  {
+    "title": "HEAD request with curl",
+    "file_path": "snippets/php/curl-head.php",
+    "language": "php",
+    "paradigm": "synchronous",
+    "output": "none",
+    "method": "head",
+    "sources": [
+      "https://gist.github.com/lixingcong/878a179bf1dce183b194a63135d104c8"
+    ],
+    "tags": [
+      "curl"
+    ]
+  },
+  {
+    "title": "Check HTTP code with curl",
+    "file_path": "snippets/php/curl-http-code.php",
+    "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://gist.github.com/lixingcong/878a179bf1dce183b194a63135d104c8"
+    ],
+    "tags": [
+      "curl",
+      "http-code"
+    ]
   }
 ]
