@@ -972,5 +972,19 @@
       "curl",
       "http-code"
     ]
+  },
+  {
+    "title": "GET request to variable with reqwest",
+    "file_path": "snippets/rust/reqwest-to-variable-get.rs",
+    "language": "rust",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://docs.rs/reqwest/0.10.3/reqwest/blocking/index.html"
+    ],
+    "tags": [
+      "library"
+    ]
   }
 ]
