@@ -986,5 +986,20 @@
     "tags": [
       "library"
     ]
+  },
+  {
+    "title": "Custom headers with curl",
+    "file_path": "snippets/rust/curl-custom-headers.rs",
+    "language": "rust",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://docs.rs/curl/0.5.0/curl/easy/struct.Easy2.html#method.http_headers"
+    ],
+    "tags": [
+      "curl",
+      "custom-headers"
+    ]
   }
 ]
