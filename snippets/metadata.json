@@ -1016,5 +1016,20 @@
       "curl",
       "custom-headers"
     ]
+  },
+  {
+    "title": "GET request with curl ignoring SSL",
+    "file_path": "snippets/rust/curl-ignore-ssl.rs",
+    "language": "rust",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://stackoverflow.com/questions/15135834/php-curl-curlopt-ssl-verifypeer-ignored"
+    ],
+    "tags": [
+      "curl",
+      "ignore-ssl"
+    ]
   }
 ]
