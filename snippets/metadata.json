@@ -26,6 +26,21 @@
     ]
   },
   {
+    "title": "GET request ignoring SSL with curl",
+    "file_path": "snippets/php/curl-ignore-ssl-get.php",
+    "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://stackoverflow.com/questions/15135834/php-curl-curlopt-ssl-verifypeer-ignored"
+    ],
+    "tags": [
+      "curl",
+      "ignore-ssl"
+    ]
+  },
+  {
     "title": "Concurrent GET with multicurl",
     "file_path": "snippets/php/curl-concurrent-get.php",
     "language": "php",
