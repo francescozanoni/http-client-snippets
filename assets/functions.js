@@ -40,6 +40,9 @@ function formatLanguage(language) {
         case "javascript":
             output = "JavaScript";
             break;
+        case "powershell":
+            output = "PowerShell";
+            break;
         case "rust":
             output = "Rust";
             break;
@@ -97,6 +100,10 @@ function getLanguageImageTag(language) {
         case "php":
             // @see https://www.php.net/download-logos.php
             output = '<img src="https://www.php.net/images/logos/new-php-logo.svg" />';
+            break;
+        case "powershell":
+            // @see https://en.wikipedia.org/wiki/PowerShell
+            output = '<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png" />';
             break;
         case "rust":
             // @see https://commons.wikimedia.org/wiki/File:Rust_programming_language_black_logo.svg
