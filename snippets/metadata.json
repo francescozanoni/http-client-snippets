@@ -1053,5 +1053,20 @@
     "sources": [
       "https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-webrequest?view=powershell-7"
     ]
+  },
+  {
+    "title": "Basic Authentication",
+    "file_path": "snippets/powershell/simple-basic-authentication.ps1",
+    "language": "powershell",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://adsecurity.org/?p=478",
+      "https://stackoverflow.com/questions/45629001/powershell-base64-vs-regular-base64"
+    ],
+    "tags": [
+      "basic-authentication"
+    ]
   }
 ]
