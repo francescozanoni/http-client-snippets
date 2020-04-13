@@ -1079,5 +1079,19 @@
     "sources": [
       "https://mkyong.com/java/java-11-httpclient-examples"
     ]
+  },
+  {
+    "title": "GET with custom headers",
+    "file_path": "snippets/java/simple-custom-headers.java",
+    "language": "java",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://mkyong.com/java/java-11-httpclient-examples"
+    ],
+    "tags": [
+      "custom-headers"
+    ]
   }
 ]
