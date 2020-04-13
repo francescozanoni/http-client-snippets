@@ -14,7 +14,8 @@ public class Program {
     HttpRequest request;
     HttpResponse<String> response;
 
-    BodyPublisher payload = BodyPublishers.ofString("key1=value1&key2=value2");
+    BodyPublisher payload = BodyPublishers
+                              .ofString("key1=value1&key2=value2");
 
     client = HttpClient
                .newBuilder()

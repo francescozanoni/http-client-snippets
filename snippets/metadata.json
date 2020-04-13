@@ -285,7 +285,7 @@
     ]
   },
   {
-    "title": "POST request with curl",
+    "title": "POST form with curl",
     "file_path": "snippets/bash/curl-post.sh",
     "language": "bash",
     "paradigm": "synchronous",
@@ -295,11 +295,12 @@
       "https://gist.github.com/subfuzion/08c5d85437d5d4f00e58"
     ],
     "tags": [
-      "curl"
+      "curl",
+      "form"
     ]
   },
   {
-    "title": "POST request with curl",
+    "title": "POST form with curl",
     "file_path": "snippets/php/curl-post.php",
     "language": "php",
     "paradigm": "synchronous",
@@ -309,7 +310,8 @@
       "https://stackoverflow.com/questions/2138527/php-curl-http-post-sample-code#2138534"
     ],
     "tags": [
-      "curl"
+      "curl",
+      "form"
     ]
   },
   {
@@ -445,7 +447,7 @@
     ]
   },
   {
-    "title": "Simple POST with file_get_contents()",
+    "title": "POST form with file_get_contents()",
     "file_path": "snippets/php/simple-post.php",
     "language": "php",
     "paradigm": "synchronous",
@@ -453,6 +455,9 @@
     "method": "post",
     "sources": [
       "https://www.php.net/manual/en/context.http.php"
+    ],
+    "tags": [
+      "form"
     ]
   },
   {
@@ -498,7 +503,7 @@
     ]
   },
   {
-    "title": "POST request with Guzzle",
+    "title": "POST form with Guzzle",
     "file_path": "snippets/php/guzzle-post.php",
     "language": "php",
     "paradigm": "synchronous",
@@ -508,7 +513,8 @@
       "http://docs.guzzlephp.org/en/stable/quickstart.html#post-form-requests"
     ],
     "tags": [
-      "library"
+      "library",
+      "form"
     ]
   },
   {
@@ -737,7 +743,7 @@
     ]
   },
   {
-    "title": "POST request with Axios",
+    "title": "POST form with Axios",
     "file_path": "snippets/javascript/axios-post.js",
     "language": "javascript",
     "paradigm": "asynchronous",
@@ -747,7 +753,8 @@
       "https://github.com/axios/axios"
     ],
     "tags": [
-      "library"
+      "library",
+      "form"
     ]
   },
   {
@@ -946,7 +953,7 @@
     ]
   },
   {
-    "title": "POST request to variable with curl",
+    "title": "POST form to variable with curl",
     "file_path": "snippets/rust/curl-to-variable-post.rs",
     "language": "rust",
     "paradigm": "synchronous",
@@ -956,7 +963,8 @@
       "https://docs.rs/curl/0.5.0/curl/easy/struct.Easy2.html"
     ],
     "tags": [
-      "curl"
+      "curl",
+      "form"
     ]
   },
   {
@@ -1095,7 +1103,7 @@
     ]
   },
   {
-    "title": "Simple POST to variable",
+    "title": "POST form to variable",
     "file_path": "snippets/java/simple-post.java",
     "language": "java",
     "paradigm": "synchronous",
@@ -1103,6 +1111,9 @@
     "method": "post",
     "sources": [
       "https://mkyong.com/java/java-11-httpclient-examples"
+    ],
+    "tags": [
+      "form"
     ]
   }
 ]
