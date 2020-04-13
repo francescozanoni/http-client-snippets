@@ -1068,5 +1068,16 @@
     "tags": [
       "basic-authentication"
     ]
+  },
+  {
+    "title": "Simple GET to variable",
+    "file_path": "snippets/java/simple-get-2.java",
+    "language": "java",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://mkyong.com/java/java-11-httpclient-examples"
+    ]
   }
 ]
