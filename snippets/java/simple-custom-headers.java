@@ -12,15 +12,17 @@ public class Program {
     HttpRequest request;
     HttpResponse<String> response;
 
-    client = HttpClient.newBuilder()
-                       .version(HttpClient.Version.HTTP_1_1)
-                       .build();
+    client = HttpClient
+               .newBuilder()
+               .version(HttpClient.Version.HTTP_1_1)
+               .build();
 
-    request = HttpRequest.newBuilder()
-                         .uri(URI.create("http://example.com"))
-                         .setHeader("X-Custom-1", "value 1")
-                         .setHeader("X-Custom-2", "value 2")
-                         .build();
+    request = HttpRequest
+                .newBuilder()
+                .uri(URI.create("http://example.com"))
+                .setHeader("X-Custom-1", "value 1")
+                .setHeader("X-Custom-2", "value 2")
+                .build();
 
     response = client.send(request, BodyHandlers.ofString());
 

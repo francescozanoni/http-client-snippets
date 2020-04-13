@@ -1093,5 +1093,16 @@
     "tags": [
       "custom-headers"
     ]
+  },
+  {
+    "title": "Simple POST to variable",
+    "file_path": "snippets/java/simple-post.java",
+    "language": "java",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "post",
+    "sources": [
+      "https://mkyong.com/java/java-11-httpclient-examples"
+    ]
   }
 ]
