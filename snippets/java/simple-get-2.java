@@ -14,7 +14,6 @@ public class Program {
 
     client = HttpClient
                .newBuilder()
-               .version(HttpClient.Version.HTTP_1_1)
                .build();
 
     request = HttpRequest
