@@ -1115,5 +1115,20 @@
     "tags": [
       "form"
     ]
+  },
+  {
+    "title": "Basic Authentication",
+    "file_path": "snippets/java/basic-authentication.java",
+    "language": "java",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://mkyong.com/java/java-11-httpclient-examples",
+      "https://www.hellojava.com/a/52677.html"
+    ],
+    "tags": [
+      "basic-authentication"
+    ]
   }
 ]
