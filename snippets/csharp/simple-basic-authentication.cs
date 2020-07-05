@@ -35,12 +35,12 @@ class Program {
 
   }
 
-  static string EncodeString(string inputDataString) {
+  static string EncodeString(string input) {
 
-    byte[] dataBinary = Encoding.GetEncoding("ISO-8859-1").GetBytes(inputDataString);
-    string outputDataString = Convert.ToBase64String(dataBinary);
+    byte[] data = Encoding.GetEncoding("ISO-8859-1").GetBytes(input);
+    string output = Convert.ToBase64String(data);
 
-    return outputDataString;
+    return output;
 
   }
 
