@@ -1078,6 +1078,17 @@
     ]
   },
   {
+    "title": "Check HTTP code",
+    "file_path": "snippets/powershell/http-code.ps1",
+    "language": "powershell",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "tags": [
+      "http-code"
+    ]
+  },
+  {
     "title": "Simple GET to variable",
     "file_path": "snippets/java/simple-get-2.java",
     "language": "java",
