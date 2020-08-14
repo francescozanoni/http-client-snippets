@@ -1141,5 +1141,28 @@
     "tags": [
       "basic-authentication"
     ]
+  },
+  {
+    "title": "Simple upload file",
+    "file_path": "snippets/php/simple-upload-file.php",
+    "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "post",
+    "tags": [
+      "upload"
+    ]
+  },
+  {
+    "title": "Upload file with curl",
+    "file_path": "snippets/bash/curl-upload-file.sh",
+    "language": "bash",
+    "paradigm": "synchronous",
+    "output": "console",
+    "method": "post",
+    "tags": [
+      "upload",
+      "curl"
+    ]
   }
 ]
