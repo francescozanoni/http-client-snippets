@@ -1164,5 +1164,36 @@
       "upload",
       "curl"
     ]
+  },
+  {
+    "title": "GET request",
+    "file_path": "snippets/javascript/fetch-get.js",
+    "language": "javascript",
+    "paradigm": "asynchronous",
+    "output": "console",
+    "method": "get",
+    "sources": [
+      "https://www.npmjs.com/package/node-fetch"
+    ],
+    "tags": [
+      "node",
+      "library"
+    ]
+  },
+  {
+    "title": "POST request with JSON body",
+    "file_path": "snippets/javascript/fetch-json-post.js",
+    "language": "javascript",
+    "paradigm": "asynchronous",
+    "output": "console",
+    "method": "post",
+    "sources": [
+      "https://www.npmjs.com/package/node-fetch"
+    ],
+    "tags": [
+      "node",
+      "library",
+      "json"
+    ]
   }
 ]
