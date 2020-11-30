@@ -1195,5 +1195,19 @@
       "library",
       "json"
     ]
+  },
+  {
+    "title": "Basic Authentication (old)",
+    "file_path": "snippets/java/basic-authentication-old.java",
+    "language": "java",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://stackoverflow.com/questions/3283234/http-basic-authentication-in-java-using-httpclient#3283496"
+    ],
+    "tags": [
+      "basic-authentication"
+    ]
   }
 ]
