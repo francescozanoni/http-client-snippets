@@ -1209,5 +1209,41 @@
     "tags": [
       "basic-authentication"
     ]
+  },
+  {
+    "title": "Simple upload file",
+    "file_path": "snippets/powershell/simple-upload-file.ps1",
+    "language": "powershell",
+    "paradigm": "synchronous",
+    "output": "console",
+    "method": "post",
+    "tags": [
+      "upload"
+    ]
+  },
+  {
+    "title": "Simple GET ignoring SSL",
+    "file_path": "snippets/powershell/simple-ignore-ssl-get.ps1",
+    "language": "powershell",
+    "paradigm": "synchronous",
+    "output": "console",
+    "method": "get",
+    "sources": [
+      "https://til.intrepidintegration.com/powershell/ssl-cert-bypass"
+    ],
+    "tags": [
+      "ignore-ssl"
+    ]
+  },
+  {
+    "title": "Custom headers",
+    "file_path": "snippets/powershell/simple-custom-headers-get.ps1",
+    "language": "powershell",
+    "paradigm": "synchronous",
+    "output": "console",
+    "method": "get",
+    "tags": [
+      "custom-headers"
+    ]
   }
 ]
