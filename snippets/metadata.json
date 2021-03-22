@@ -1245,5 +1245,36 @@
     "tags": [
       "custom-headers"
     ]
+  },
+  {
+    "title": "Custom host resolution with Axios",
+    "file_path": "snippets/javascript/axios-host-resolution-get.js",
+    "language": "javascript",
+    "paradigm": "asynchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://github.com/axios/axios"
+    ],
+    "tags": [
+      "library",
+      "host-resolution"
+    ]
+  },
+  {
+    "title": "GET request with custom host resolution",
+    "file_path": "snippets/javascript/fetch-host-resolution-get.js",
+    "language": "javascript",
+    "paradigm": "asynchronous",
+    "output": "console",
+    "method": "get",
+    "sources": [
+      "https://www.npmjs.com/package/node-fetch"
+    ],
+    "tags": [
+      "node",
+      "library",
+      "host-resolution"
+    ]
   }
 ]
