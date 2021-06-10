@@ -1276,5 +1276,33 @@
       "library",
       "host-resolution"
     ]
+  },
+  {
+    "title": "POST form",
+    "file_path": "snippets/powershell/post.ps1",
+    "language": "powershell",
+    "paradigm": "synchronous",
+    "output": "console",
+    "method": "post",
+    "sources": [
+      "https://stackoverflow.com/questions/17325293/invoke-webrequest-post-with-parameters"
+    ],
+    "tags": [
+      "form"
+    ]
+  },
+  {
+    "title": "POST request with JSON body",
+    "file_path": "snippets/powershell/json-post.ps1",
+    "language": "powershell",
+    "paradigm": "synchronous",
+    "output": "console",
+    "method": "post",
+    "sources": [
+      "https://stackoverflow.com/questions/35722865/making-a-powershell-post-request-if-a-body-param-starts-with"
+    ],
+    "tags": [
+      "json"
+    ]
   }
 ]
