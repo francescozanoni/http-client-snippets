@@ -5,6 +5,7 @@ $encodedCredentials = [Convert]::ToBase64String( `
 )
 
 $response = (
-  Invoke-WebRequest -Headers @{ Authorization = "Basic $encodedCredentials" } `
-                    -URI "http://example.com"
+  Invoke-WebRequest `
+    -Headers @{ Authorization = "Basic $encodedCredentials" } `
+    -URI "http://example.com"
 ).Content

@@ -1,1 +1,2 @@
-$httpCode = (Invoke-WebRequest -URI "http://example.com").StatusCode
+$httpCode = (Invoke-WebRequest `
+               -URI "http://example.com").StatusCode
