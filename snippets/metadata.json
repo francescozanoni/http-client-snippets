@@ -1304,5 +1304,16 @@
     "tags": [
       "json"
     ]
+  },
+  {
+    "title": "Download file",
+    "file_path": "snippets/powershell/simple-to-file-get.ps1",
+    "language": "powershell",
+    "paradigm": "synchronous",
+    "output": "file",
+    "method": "get",
+    "sources": [
+      "https://4sysops.com/archives/use-powershell-to-download-a-file-with-http-https-and-ftp/"
+    ]
   }
 ]
