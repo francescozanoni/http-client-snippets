@@ -1315,5 +1315,19 @@
     "sources": [
       "https://4sysops.com/archives/use-powershell-to-download-a-file-with-http-https-and-ftp/"
     ]
+  },
+  {
+    "title": "POST request with raw JSON body",
+    "file_path": "snippets/powershell/raw-json-post.ps1",
+    "language": "powershell",
+    "paradigm": "synchronous",
+    "output": "console",
+    "method": "post",
+    "sources": [
+      "https://stackoverflow.com/questions/35722865/making-a-powershell-post-request-if-a-body-param-starts-with"
+    ],
+    "tags": [
+      "json"
+    ]
   }
 ]
