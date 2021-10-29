@@ -1329,5 +1329,19 @@
     "tags": [
       "json"
     ]
+  },
+  {
+    "title": "Accept non-200 responses",
+    "file_path": "snippets/powershell/accept-non-200-responses-get.ps1",
+    "language": "powershell",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://stackoverflow.com/questions/18771424/how-to-get-powershell-invoke-restmethod-to-return-body-of-http-500-code-response"
+    ],
+    "tags": [
+      "accept-non-200-responses"
+    ]
   }
 ]
