@@ -1343,5 +1343,37 @@
     "tags": [
       "accept-non-200-responses"
     ]
+  },
+  {
+    "title": "GET request with client certificate with Axios",
+    "file_path": "snippets/javascript/axios-client-certificate-get.js",
+    "language": "javascript",
+    "paradigm": "asynchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://stackoverflow.com/questions/51363855/how-to-configure-axios-to-use-ssl-certificate",
+      "https://axios-http.com/docs/req_config"
+    ],
+    "tags": [
+      "library",
+      "client-certificate",
+      "node"
+    ]
+  },
+  {
+    "title": "Accept non-200 responses with Axios",
+    "file_path": "snippets/javascript/accept-non-200-responses-get.js",
+    "language": "javascript",
+    "paradigm": "asynchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://axios-http.com/docs/req_config"
+    ],
+    "tags": [
+      "library",
+      "accept-non-200-responses"
+    ]
   }
 ]
