@@ -1375,5 +1375,20 @@
       "library",
       "accept-non-200-responses"
     ]
+  },
+  {
+    "title": "POST request with raw long JSON body",
+    "file_path": "snippets/powershell/raw-long-json-post.ps1",
+    "language": "powershell",
+    "paradigm": "synchronous",
+    "output": "console",
+    "method": "post",
+    "sources": [
+      "https://stackoverflow.com/questions/35722865/making-a-powershell-post-request-if-a-body-param-starts-with",
+      "https://stackoverflow.com/questions/57154027/inputting-json-data-in-powershell"
+    ],
+    "tags": [
+      "json"
+    ]
   }
 ]
