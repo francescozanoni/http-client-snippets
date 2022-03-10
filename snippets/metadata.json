@@ -1390,5 +1390,19 @@
     "tags": [
       "json"
     ]
+  },
+  {
+    "title": "GET request with custom host resolution",
+    "file_path": "snippets/powershell/host-resolution-get.ps1",
+    "language": "powershell",
+    "paradigm": "synchronous",
+    "output": "console",
+    "method": "get",
+    "sources": [
+      "https://mandie.net/2018/03/23/how-to-spoof-a-hostname-for-invoke-webrequest-without-messing-around-in-the-hosts-file/"
+    ],
+    "tags": [
+      "host-resolution"
+    ]
   }
 ]
