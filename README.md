@@ -1,7 +1,7 @@
 # HTTP client code snippets in multiple languages
 
 | LANGUAGE       | LIBRARIES/FRAMEWORKS                                                                                                         |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+|----------------|------------------------------------------------------------------------------------------------------------------------------|
 | **Bash**       | [Wget](https://www.gnu.org/software/wget), [cURL](https://curl.haxx.se)                                                      |
 | **C**          | [cURL](https://curl.haxx.se/libcurl/c)                                                                                       |
 | **C#**         | [.NET Core](https://dotnet.microsoft.com)                                                                                    |

@@ -543,7 +543,7 @@
       "http://docs.guzzlephp.org/en/stable/request-options.html#headers"
     ],
     "tags": [
-      "custom-headers",
+      "request-custom-headers",
       "library"
     ]
   },
@@ -651,7 +651,7 @@
       "https://www.swoole.co.uk/#get-started"
     ],
     "tags": [
-      "custom-headers",
+      "request-custom-headers",
       "swoole"
     ]
   },
@@ -709,7 +709,7 @@
     ],
     "tags": [
       "curl",
-      "custom-headers"
+      "request-custom-headers"
     ]
   },
   {
@@ -813,7 +813,7 @@
     ],
     "tags": [
       "library",
-      "custom-headers"
+      "request-custom-headers"
     ]
   },
   {
@@ -1022,7 +1022,7 @@
     ],
     "tags": [
       "curl",
-      "custom-headers"
+      "request-custom-headers"
     ]
   },
   {
@@ -1110,7 +1110,7 @@
       "https://mkyong.com/java/java-11-httpclient-examples"
     ],
     "tags": [
-      "custom-headers"
+      "request-custom-headers"
     ]
   },
   {
@@ -1243,7 +1243,7 @@
     "output": "console",
     "method": "get",
     "tags": [
-      "custom-headers"
+      "request-custom-headers"
     ]
   },
   {
@@ -1403,6 +1403,21 @@
     ],
     "tags": [
       "host-resolution"
+    ]
+  },
+  {
+    "title": "Check HTTP code with curl",
+    "file_path": "snippets/bash/curl-http-code.sh",
+    "language": "bash",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "get",
+    "sources": [
+      "https://stackoverflow.com/questions/10060098/getting-only-response-header-from-http-post-using-curl"
+    ],
+    "tags": [
+      "curl",
+      "http-code"
     ]
   }
 ]
