@@ -1422,7 +1422,7 @@
   },
   {
     "title": "POST request with JSON body with Guzzle",
-    "file_path": "snippets/bash/guzzle-json-post.php",
+    "file_path": "snippets/php/guzzle-json-post.php",
     "language": "php",
     "paradigm": "synchronous",
     "output": "variable",
