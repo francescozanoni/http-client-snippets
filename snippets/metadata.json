@@ -1419,5 +1419,20 @@
       "curl",
       "http-code"
     ]
+  },
+  {
+    "title": "POST request with JSON body with Guzzle",
+    "file_path": "snippets/bash/guzzle-json-post.php",
+    "language": "php",
+    "paradigm": "synchronous",
+    "output": "variable",
+    "method": "post",
+    "sources": [
+      "https://stackoverflow.com/questions/22244738/how-can-i-use-guzzle-to-send-a-post-request-in-json"
+    ],
+    "tags": [
+      "library",
+      "json"
+    ]
   }
 ]
